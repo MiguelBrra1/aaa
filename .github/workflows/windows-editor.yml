@@ -1,0 +1,45 @@
+name: Editor de Windows (.exe)
+
+# Compila el editor de JasperEngine en un servidor Windows de GitHub y deja
+# un .zip con el .exe para descargar. Corre con cada push a la rama
+# build-windows, o a mano desde la pestaña Actions.
+on:
+  push:
+    branches: [build-windows]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  editor:
+    name: Compilar editor (Windows x64)
+    runs-on: windows-latest
+    timeout-minutes: 300
+    steps:
+      - name: Permitir rutas largas
+        run: git config --system core.longpaths true
+
+      - uses: actions/checkout@v4
+
+      - name: Entorno de Visual Studio (MSVC x64)
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+
+      - name: Configurar
+        run: cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DJASPERENGINE_TESTS=OFF "-DCMAKE_INSTALL_PREFIX=${{ github.workspace }}/dist/JasperEngine"
+
+      - name: Compilar
+        run: cmake --build build --target jasperengine-editor jasperengine-editor-cmd
+
+      - name: Instalar
+        run: cmake --install build
+
+      - name: Subir el editor
+        uses: actions/upload-artifact@v4
+        with:
+          name: JasperEngine-Windows
+          path: dist/JasperEngine
+          if-no-files-found: error
+          retention-days: 30

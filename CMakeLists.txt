@@ -843,6 +843,7 @@ set(JASPERENGINE_EDITOR_SOURCES
     ${EDITOR_DIR}/AppCommands.cpp
     ${EDITOR_DIR}/AppSettings.cpp
     ${EDITOR_DIR}/Theme.cpp
+    ${EDITOR_DIR}/EditorLang.cpp
     ${EDITOR_DIR}/Factory.cpp
     ${EDITOR_DIR}/Out.cpp
     ${EDITOR_DIR}/Platform.cpp

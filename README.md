@@ -1,3 +1,12 @@
+# HoneyEngine
+
+**HoneyEngine** es un fork de [JasperEngine](https://github.com/Arakuma-Studio/JasperEngine) con el editor en
+español, un tema retrowave y tablas de traducción para los juegos ([docs/localization.md](docs/localization.md)).
+El editor se compila para Windows con la acción *HoneyEngine para Windows (.exe)* (rama `build-windows`).
+El código y los archivos conservan el nombre JasperEngine; el editor se muestra como HoneyEngine.
+
+---
+
 # JasperEngine
 
 **A lightweight native C++ engine for 2D and 3D games, with a visual editor and Lua scripting.**

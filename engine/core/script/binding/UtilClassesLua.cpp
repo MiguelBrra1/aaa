@@ -10,6 +10,7 @@
 #include "util/Angle.h"
 #include "util/Base64.h"
 #include "util/Color.h"
+#include "util/Localization.h"
 #include "util/CrashHook.h"
 #include "util/Scheduler.h"
 #include "script/ScriptScheduler.h"
@@ -21,10 +22,12 @@
 #include <cmath>
 #include <cstdio>
 #include <cstring>
+#include <map>
 #include <memory>
 #include <string>
 #include <unordered_map>
 #include <utility>
+#include <vector>
 
 using namespace jasperengine;
 
@@ -711,6 +714,92 @@ namespace je_lua_timer {
 
 }
 
+// ------------------------------------------------------------ Localization
+//
+// Localization.get(key [, args]): the text of key in the game's language; args replaces
+// {name} with args.name and {1}, {2}... with args[1], args[2]... (numbers and booleans are
+// written as Lua's tostring would).
+
+namespace {
+
+    std::map<std::string, std::string> localizationArgs(lua_State* L, int index){
+        std::map<std::string, std::string> args;
+        if (!lua_istable(L, index)) return args;
+        lua_pushnil(L);
+        while (lua_next(L, index) != 0){
+            std::string name;
+            if (lua_type(L, -2) == LUA_TSTRING) name = lua_tostring(L, -2);
+            else if (lua_type(L, -2) == LUA_TNUMBER){
+                lua_pushvalue(L, -2);
+                name = lua_tostring(L, -1);
+                lua_pop(L, 1);
+                if (name.size() > 2 && name.compare(name.size() - 2, 2, ".0") == 0) name.resize(name.size() - 2);
+            }
+            if (!name.empty()){
+                size_t len = 0;
+                const char* value = luaL_tolstring(L, -1, &len);
+                args[name] = std::string(value, len);
+                lua_pop(L, 1);
+            }
+            lua_pop(L, 1);
+        }
+        return args;
+    }
+
+    int pushStringList(lua_State* L, const std::vector<std::string>& list){
+        lua_createtable(L, (int)list.size(), 0);
+        for (size_t i = 0; i < list.size(); i++){
+            lua_pushlstring(L, list[i].data(), list[i].size());
+            lua_rawseti(L, -2, (lua_Integer)i + 1);
+        }
+        return 1;
+    }
+
+    int localizationGet(lua_State* L){
+        const std::string key = luaL_checkstring(L, 1);
+        const std::string text = lua_istable(L, 2) ? Localization::format(key, localizationArgs(L, 2)) : Localization::get(key);
+        lua_pushlstring(L, text.data(), text.size());
+        return 1;
+    }
+
+    int localizationGetIn(lua_State* L){
+        const std::string text = Localization::getIn(luaL_checkstring(L, 1), luaL_checkstring(L, 2));
+        lua_pushlstring(L, text.data(), text.size());
+        return 1;
+    }
+
+    int localizationHas(lua_State* L){
+        lua_pushboolean(L, Localization::has(luaL_checkstring(L, 1)) ? 1 : 0);
+        return 1;
+    }
+
+    // Localization.load(path) -> true | false, error
+    int localizationLoad(lua_State* L){
+        std::string error;
+        if (Localization::load(luaL_checkstring(L, 1), &error)){ lua_pushboolean(L, 1); return 1; }
+        lua_pushboolean(L, 0);
+        lua_pushstring(L, error.c_str());
+        return 2;
+    }
+
+    // Localization.setLanguage(code): an invalid tag raises; "" goes back to the device's language
+    int localizationSetLanguage(lua_State* L){
+        std::string error;
+        if (!Localization::setLanguage(luaL_checkstring(L, 1), &error)) return luaL_error(L, "Localization: %s.", error.c_str());
+        return 0;
+    }
+
+    int localizationGetLanguage(lua_State* L){
+        const std::string code = Localization::getLanguage();
+        lua_pushlstring(L, code.data(), code.size());
+        return 1;
+    }
+
+    int localizationGetLanguages(lua_State* L){ return pushStringList(L, Localization::getLanguages()); }
+    int localizationGetKeys(lua_State* L){ return pushStringList(L, Localization::getKeys()); }
+
+}
+
 void LuaBinding::registerUtilClasses(lua_State *L){
 #ifndef DISABLE_LUA_BINDINGS
 
@@ -743,6 +832,21 @@ void LuaBinding::registerUtilClasses(lua_State *L){
             luabridge::overload<Vector4>(&Color::sRGBToLinear),
             luabridge::overload<const float, const float, const float>(&Color::sRGBToLinear),
             luabridge::overload<const float, const float, const float, const float>(&Color::sRGBToLinear))
+        .endClass();
+
+    luabridge::getGlobalNamespace(L)
+        .beginClass<Localization>("Localization")
+        .addStaticFunction("get", &localizationGet)
+        .addStaticFunction("format", &localizationGet)
+        .addStaticFunction("getIn", &localizationGetIn)
+        .addStaticFunction("has", &localizationHas)
+        .addStaticFunction("load", &localizationLoad)
+        .addStaticFunction("clear", &Localization::clear)
+        .addStaticFunction("setLanguage", &localizationSetLanguage)
+        .addStaticFunction("getLanguage", &localizationGetLanguage)
+        .addStaticFunction("getLanguages", &localizationGetLanguages)
+        .addStaticFunction("getKeys", &localizationGetKeys)
+        .addStaticProperty("onLanguageChanged", +[]() { return &Localization::getOnLanguageChanged(); })
         .endClass();
 
 #endif //DISABLE_LUA_BINDINGS

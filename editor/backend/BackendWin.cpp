@@ -593,7 +593,7 @@ void updateFramePeriod() {
 
 bool initializeWindow(int width, int height, bool maximized) {
     WindowWinConfig config;
-    config.title = "JasperEngine";
+    config.title = "HoneyEngine";
     config.width = width;
     config.height = height;
     config.maximized = maximized;

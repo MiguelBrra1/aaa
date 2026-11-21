@@ -2354,7 +2354,7 @@ void createViewport(ImGuiViewport* viewport) {
     viewport->PlatformUserData = window;
     viewport->PlatformHandle = window;
     viewport->PlatformHandleRaw = reinterpret_cast<void*>(static_cast<uintptr_t>(window->handle));
-    setWindowTitle(window, "JasperEngine");
+    setWindowTitle(window, "HoneyEngine");
 }
 
 void destroyViewport(ImGuiViewport* viewport) {
@@ -2844,7 +2844,7 @@ bool initializeX11(editor::App& app) {
         return false;
     }
     backend->mainWindow->owned = false;
-    setWindowTitle(backend->mainWindow, "JasperEngine");
+    setWindowTitle(backend->mainWindow, "HoneyEngine");
     XMapWindow(backend->display, backend->mainWindow->handle);
 
     backend->mouseCursors[ImGuiMouseCursor_Arrow] = XCreateFontCursor(backend->display, XC_left_ptr);

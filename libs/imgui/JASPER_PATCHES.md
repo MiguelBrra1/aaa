@@ -32,3 +32,15 @@ So the text an input method is composing (げきあつ before it becomes 激熱)
   ImGui (the input method owns Enter, Esc, arrows and Backspace then); releases still pass.
 
 Drop this patch if upstream ImGui gains marked-text support.
+
+## Editor language (display-text translation)
+
+So the editor can show its interface in other languages without changing any label or window ID
+(`editor/EditorLang`):
+
+- `imgui_internal.h`: `ImGui::TextTranslateHook`, `ImGui::SetTextTranslateHook(hook, user_data)` and
+  `ImGui::TranslateDisplayText(&text, &text_end)`.
+- `imgui.cpp`: `RenderText()`, `RenderTextWrapped()`, `RenderTextClipped()` (drops
+  `text_size_if_known` when replaced), `RenderTextEllipsis()` (same) and `CalcTextSize()` pass the
+  visible part of the text (after the `##` cut) through `TranslateDisplayText()`. Without a hook
+  installed nothing changes.

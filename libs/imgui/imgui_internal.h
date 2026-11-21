@@ -3996,6 +3996,13 @@ namespace ImGui
     // [JasperEngine patch, libs/imgui/JASPER_PATCHES.md] consulted first by DataTypeApplyFromText: >= 0 handled (1 = changed), < 0 = parse as usual
     typedef int (*DataTypeApplyFromTextHook)(const char* buf, ImGuiDataType data_type, void* p_data, const char* format, void* user_data);
     IMGUI_API void          SetDataTypeApplyFromTextHook(DataTypeApplyFromTextHook hook, void* user_data);
+    // [JasperEngine patch] Display-text translation (editor language): RenderText*, RenderTextClipped,
+    // RenderTextEllipsis and CalcTextSize show [text, text_end) as the hook's replacement when it
+    // returns true. IDs (the label, '##' and '###' parts) are untouched, so windows, docking and
+    // .ini state keep their English names. The replacement must outlive the frame.
+    typedef bool (*TextTranslateHook)(const char* text, const char* text_end, const char** out_text, const char** out_text_end, void* user_data);
+    IMGUI_API void          SetTextTranslateHook(TextTranslateHook hook, void* user_data);
+    IMGUI_API bool          TranslateDisplayText(const char** text, const char** text_end); // true when replaced
     IMGUI_API int           DataTypeCompare(ImGuiDataType data_type, const void* arg_1, const void* arg_2);
     IMGUI_API bool          DataTypeClamp(ImGuiDataType data_type, void* p_data, const void* p_min, const void* p_max);
     IMGUI_API bool          DataTypeIsZero(ImGuiDataType data_type, const void* p_data);

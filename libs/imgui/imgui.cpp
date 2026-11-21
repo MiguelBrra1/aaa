@@ -3922,6 +3922,24 @@ const char* ImGui::FindRenderedTextEnd(const char* text, const char* text_end)
 
 // Internal ImGui functions to render text
 // RenderText***() functions calls ImDrawList::AddText() calls ImBitmapFont::RenderText()
+// [JasperEngine patch] display-text translation, see SetTextTranslateHook in imgui_internal.h
+static ImGui::TextTranslateHook GTextTranslateHook = NULL;
+static void* GTextTranslateHookUserData = NULL;
+void ImGui::SetTextTranslateHook(TextTranslateHook hook, void* user_data) { GTextTranslateHook = hook; GTextTranslateHookUserData = user_data; }
+bool ImGui::TranslateDisplayText(const char** text, const char** text_end)
+{
+    if (!GTextTranslateHook || *text == NULL)
+        return false;
+    const char* end = *text_end ? *text_end : *text + ImStrlen(*text);
+    const char* out_text = NULL;
+    const char* out_end = NULL;
+    if (end == *text || !GTextTranslateHook(*text, end, &out_text, &out_end, GTextTranslateHookUserData) || out_text == NULL)
+        return false;
+    *text = out_text;
+    *text_end = out_end ? out_end : out_text + ImStrlen(out_text);
+    return true;
+}
+
 void ImGui::RenderText(ImVec2 pos, const char* text, const char* text_end, bool hide_text_after_hash)
 {
     ImGuiContext& g = *GImGui;
@@ -3939,6 +3957,7 @@ void ImGui::RenderText(ImVec2 pos, const char* text, const char* text_end, bool 
             text_end = text + ImStrlen(text); // FIXME-OPT (not reached by our internal calls)
         text_display_end = text_end;
     }
+    TranslateDisplayText(&text, &text_display_end); // [JasperEngine patch]
 
     if (text != text_display_end)
     {
@@ -3955,6 +3974,7 @@ void ImGui::RenderTextWrapped(ImVec2 pos, const char* text, const char* text_end
 
     if (!text_end)
         text_end = text + ImStrlen(text); // FIXME-OPT (not reached by our internal calls)
+    TranslateDisplayText(&text, &text_end); // [JasperEngine patch]
 
     if (text != text_end)
     {
@@ -4004,6 +4024,8 @@ void ImGui::RenderTextClipped(const ImVec2& pos_min, const ImVec2& pos_max, cons
     const int text_len = (int)(text_display_end - text);
     if (text_len == 0)
         return;
+    if (TranslateDisplayText(&text, &text_display_end)) // [JasperEngine patch]
+        text_size_if_known = NULL;
 
     ImGuiContext& g = *GImGui;
     ImGuiWindow* window = g.CurrentWindow;
@@ -4021,6 +4043,8 @@ void ImGui::RenderTextEllipsis(ImDrawList* draw_list, const ImVec2& pos_min, con
     ImGuiContext& g = *GImGui;
     if (text_end_full == NULL)
         text_end_full = FindRenderedTextEnd(text);
+    if (TranslateDisplayText(&text, &text_end_full)) // [JasperEngine patch]
+        text_size_if_known = NULL;
     const ImVec2 text_size = text_size_if_known ? *text_size_if_known : CalcTextSize(text, text_end_full, false, 0.0f);
 
     //draw_list->AddLineV(pos_max.x, pos_min.y - 4, pos_max.y + 6, IM_COL32(0, 0, 255, 255));
@@ -6441,6 +6465,7 @@ ImVec2 ImGui::CalcTextSize(const char* text, const char* text_end, bool hide_tex
         text_display_end = FindRenderedTextEnd(text, text_end);      // Hide anything after a '##' string
     else
         text_display_end = text_end;
+    TranslateDisplayText(&text, &text_display_end); // [JasperEngine patch]
 
     ImFont* font = g.Font;
     const float font_size = g.FontSize;

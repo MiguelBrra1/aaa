@@ -4893,6 +4893,10 @@ void registerBuiltinSettings(SettingsRegistry& registry) {
         [](SettingsContext&) { return Json(AppSettings::getEditorVSyncEnabled()); }));
     addOrAbort(registry, uiRow("preferences.ui_scale", general, "", "UI Scale", "zoom size text panels dpi",
         [](SettingsContext&) { return Json(AppSettings::getUiScale()); }));
+    addOrAbort(registry, uiRow("preferences.editor_language", general, "", "Editor Language", "language idioma spanish espanol english translation",
+        [](SettingsContext&) { return Json(AppSettings::getEditorLanguage()); }));
+    addOrAbort(registry, uiRow("preferences.editor_theme", general, "", "Editor Theme", "theme tema colors colours retrowave synthwave neon dark",
+        [](SettingsContext&) { return Json(AppSettings::getEditorTheme()); }));
     addOrAbort(registry, uiRow("preferences.auto_save", general, "Auto Save", "Auto Save Scenes", "autosave backup",
         [](SettingsContext&) { return Json(AppSettings::isAutosaveEnabled()); }));
     addOrAbort(registry, uiRow("preferences.auto_save_interval", general, "Auto Save", "Auto Save Interval (s)", "autosave backup seconds",

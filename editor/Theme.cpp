@@ -13,6 +13,7 @@ float g_appliedDpiScale = 0.0f;
 // Editor Settings > UI Scale, on top of the monitor DPI
 float g_uiScale = 1.0f;
 bool g_playModeTint = false;
+jasperengine::editor::Theme::Style g_style = jasperengine::editor::Theme::Style::Retrowave;
 
 // Unity dark skin swatch, 0xRRGGBB.
 ImVec4 hex(unsigned int rgb, float alpha = 1.0f) {
@@ -66,6 +67,125 @@ void applyPlayModeTint(ImGuiStyle& style) {
     for (size_t i = 0; i < kTintedCustomCount; i++) {
         *kTintedCustomColors[i] = tinted(g_baseCustomColors[i], tint);
     }
+}
+
+// Retrowave: deep purple panels, neon magenta and cyan accents, sunset orange and yellow notes.
+void applyRetrowave(ImGuiStyle& style) {
+    ImVec4* colors = style.Colors;
+    using ThemeColorsT = jasperengine::editor::Theme::Colors;
+
+    const ImVec4 panel     = hex(0x1A1033); // panel background
+    const ImVec4 darkStrip = hex(0x110A24); // tab strip, title and menu bars
+    const ImVec4 border    = hex(0x3A1F6B); // neon-purple outlines
+    const ImVec4 field     = hex(0x0E0720); // input fields
+    const ImVec4 magenta   = hex(0xFF2BD6);
+    const ImVec4 cyan      = hex(0x00E5FF);
+    const ImVec4 orange    = hex(0xFF8A3D);
+    const ImVec4 yellow    = hex(0xFFE45E);
+    const ImVec4 selection = hex(0x7A1FA2);
+
+    colors[ImGuiCol_Text]                       = hex(0xF3E8FF);
+    colors[ImGuiCol_TextDisabled]               = hex(0x8A76B8);
+    colors[ImGuiCol_WindowBg]                   = panel;
+    colors[ImGuiCol_PopupBg]                    = hex(0x1D1240, 0.98f);
+    colors[ImGuiCol_Border]                     = border;
+    colors[ImGuiCol_FrameBg]                    = field;
+    colors[ImGuiCol_FrameBgHovered]             = hex(0x24134A);
+    colors[ImGuiCol_FrameBgActive]              = hex(0x30185E);
+    colors[ImGuiCol_TitleBg]                    = darkStrip;
+    colors[ImGuiCol_TitleBgActive]              = hex(0x1E0F3D);
+    colors[ImGuiCol_TitleBgCollapsed]           = darkStrip;
+    colors[ImGuiCol_MenuBarBg]                  = darkStrip;
+    colors[ImGuiCol_ScrollbarBg]                = hex(0x120A26);
+    colors[ImGuiCol_ScrollbarGrab]              = hex(0x4B2C85);
+    colors[ImGuiCol_ScrollbarGrabHovered]       = hex(0x6B3BB5);
+    colors[ImGuiCol_ScrollbarGrabActive]        = magenta;
+    colors[ImGuiCol_CheckMark]                  = cyan;
+    colors[ImGuiCol_SliderGrab]                 = magenta;
+    colors[ImGuiCol_SliderGrabActive]           = cyan;
+    colors[ImGuiCol_Button]                     = hex(0x2E1A5C);
+    colors[ImGuiCol_ButtonHovered]              = hex(0x4A2488);
+    colors[ImGuiCol_ButtonActive]               = hex(0xB0179E);
+    colors[ImGuiCol_Header]                     = selection;
+    colors[ImGuiCol_HeaderHovered]              = hex(0x5A2A8C);
+    colors[ImGuiCol_HeaderActive]               = hex(0x9C27B0);
+    colors[ImGuiCol_Separator]                  = border;
+    colors[ImGuiCol_SeparatorHovered]           = hex(0x8E3FD1);
+    colors[ImGuiCol_SeparatorActive]            = cyan;
+    colors[ImGuiCol_ResizeGripHovered]          = hex(0x8E3FD1);
+    colors[ImGuiCol_ResizeGripActive]           = cyan;
+    colors[ImGuiCol_InputTextCursor]            = cyan;
+    colors[ImGuiCol_Tab]                        = hex(0x160C2E);
+    colors[ImGuiCol_TabHovered]                 = hex(0x3A1F6E);
+    colors[ImGuiCol_TabSelected]                = panel;
+    colors[ImGuiCol_TabSelectedOverline]        = magenta;
+    colors[ImGuiCol_TabDimmed]                  = hex(0x140B2A);
+    colors[ImGuiCol_TabDimmedSelected]          = panel;
+    colors[ImGuiCol_TabDimmedSelectedOverline]  = hex(0x00E5FF, 0.45f);
+    colors[ImGuiCol_DockingPreview]             = ImVec4(magenta.x, magenta.y, magenta.z, 0.45f);
+    colors[ImGuiCol_DockingEmptyBg]             = hex(0x0B0618);
+    colors[ImGuiCol_PlotLines]                  = cyan;
+    colors[ImGuiCol_PlotLinesHovered]           = orange;
+    colors[ImGuiCol_PlotHistogram]              = magenta;
+    colors[ImGuiCol_PlotHistogramHovered]       = yellow;
+    colors[ImGuiCol_TableHeaderBg]              = hex(0x24154A);
+    colors[ImGuiCol_TableBorderStrong]          = border;
+    colors[ImGuiCol_TableBorderLight]           = hex(0x2A1850);
+    colors[ImGuiCol_TableRowBgAlt]              = ImVec4(0.75f, 0.45f, 1.00f, 0.035f);
+    colors[ImGuiCol_TextLink]                   = cyan;
+    colors[ImGuiCol_TextSelectedBg]             = ImVec4(magenta.x, magenta.y, magenta.z, 0.35f);
+    colors[ImGuiCol_TreeLines]                  = hex(0x4B2C85);
+    colors[ImGuiCol_DragDropTarget]             = cyan;
+    colors[ImGuiCol_DragDropTargetBg]           = ImVec4(cyan.x, cyan.y, cyan.z, 0.12f);
+    colors[ImGuiCol_UnsavedMarker]              = orange;
+    colors[ImGuiCol_NavCursor]                  = cyan;
+    colors[ImGuiCol_NavWindowingHighlight]      = ImVec4(magenta.x, magenta.y, magenta.z, 0.70f);
+    colors[ImGuiCol_ModalWindowDimBg]           = ImVec4(0.04f, 0.01f, 0.09f, 0.60f);
+    colors[ImGuiCol_CheckboxSelectedBg]         = field;
+
+    ThemeColorsT::Selection = selection;
+    ThemeColorsT::SelectionUnfocused = hex(0x3A2466);
+    ThemeColorsT::FoldoutHeader = hex(0x24154A);
+    ThemeColorsT::FoldoutHeaderHovered = hex(0x321C63);
+    ThemeColorsT::FoldoutHeaderActive = hex(0x40227E);
+    ThemeColorsT::ToolbarBackground = hex(0x1F1240);
+    ThemeColorsT::ToolbarBorder = hex(0x2B1754);
+    ThemeColorsT::PrefabText = hex(0x5CF2FF);
+    ThemeColorsT::PrefabTextMuted = hex(0x5CF2FF, 0.70f);
+    ThemeColorsT::ErrorText = hex(0xFF4F7B);
+    ThemeColorsT::LogIcon = hex(0xC9B8FF);
+    ThemeColorsT::RowBackgroundAlt = hex(0x20133F);
+    ThemeColorsT::PlayModeTint = ImVec4(0.86f, 0.72f, 0.98f, 1.00f);
+    ThemeColorsT::PhysicsAccent = orange;
+    ThemeColorsT::PhysicsAccentHovered = hex(0xFFA463);
+    ThemeColorsT::AnimationAudio = hex(0x2EE6A8);
+    ThemeColorsT::AnimationSnapshot = magenta;
+    ThemeColorsT::ButtonActivated = hex(0x8E2AB8);
+    ThemeColorsT::IconButtonHovered = ImVec4(1.00f, 0.17f, 0.84f, 0.16f);
+    ThemeColorsT::IconButtonActive = ImVec4(0.00f, 0.90f, 1.00f, 0.22f);
+    ThemeColorsT::FileCardBackground = hex(0x1F1240);
+    ThemeColorsT::FileCardBackgroundHovered = hex(0x2E1A5C);
+    ThemeColorsT::SubtleText = hex(0xA99BD6);
+    ThemeColorsT::filenameLabel = field;
+    ThemeColorsT::ExtEntityButton = hex(0x3B2470);
+    ThemeColorsT::ExtEntityButtonHovered = hex(0x4E2F91);
+    ThemeColorsT::ExtEntityButtonActive = hex(0x2C1A55);
+    ThemeColorsT::NestedHeader = hex(0x1F1240);
+    ThemeColorsT::NestedHeaderHovered = hex(0x2B1854);
+    ThemeColorsT::NestedHeaderActive = hex(0x371E69);
+    ThemeColorsT::DisabledGreenText = hex(0x5BD6A0);
+    ThemeColorsT::ChildSceneText = cyan;
+    ThemeColorsT::SubSelectionText = orange;
+    ThemeColorsT::WarningText = yellow;
+
+    // a little softer and glowier than Unity's flat boxes
+    style.FrameRounding = 4;
+    style.PopupRounding = 4;
+    style.GrabRounding = 4;
+    style.TabRounding = 4;
+    style.ChildRounding = 4;
+    style.ScrollbarRounding = 8;
+    style.TabBarOverlineSize = 2;
 }
 
 }
@@ -269,6 +389,10 @@ void jasperengine::editor::Theme::apply() {
     // docking: thin dark gaps between panels, as in Unity
     style.DockingSeparatorSize = 2;
 
+    if (g_style == Style::Retrowave) {
+        applyRetrowave(style);
+    }
+
     g_baseStyle = style;
     for (size_t i = 0; i < kTintedCustomCount; i++) {
         g_baseCustomColors[i] = *kTintedCustomColors[i];
@@ -352,4 +476,20 @@ float jasperengine::editor::Theme::dpi(float value) {
 ImVec2 jasperengine::editor::Theme::dpi(const ImVec2& value) {
     const float scale = dpiScale();
     return ImVec2(value.x * scale, value.y * scale);
+}
+
+void jasperengine::editor::Theme::setStyle(Style newStyle) {
+    g_style = newStyle;
+}
+
+jasperengine::editor::Theme::Style jasperengine::editor::Theme::style() {
+    return g_style;
+}
+
+const char* jasperengine::editor::Theme::styleId(Style s) {
+    return s == Style::UnityDark ? "unity_dark" : "retrowave";
+}
+
+jasperengine::editor::Theme::Style jasperengine::editor::Theme::styleFromId(const std::string& id) {
+    return id == "unity_dark" ? Style::UnityDark : Style::Retrowave;
 }

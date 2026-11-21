@@ -167,6 +167,8 @@ bool AppSettings::soundBrowserAutoplay = false;
 bool AppSettings::soundBrowserMatchLoudness = true;
 std::filesystem::path AppSettings::hubLastLocation;
 float AppSettings::uiScale = 1.0f;
+std::string AppSettings::editorLanguage = "es";
+std::string AppSettings::editorTheme = "retrowave";
 PanelVisibilitySettings AppSettings::panelVisibility;
 GameViewSettings AppSettings::gameViewSettings;
 SceneViewSettings AppSettings::sceneViewSettings;
@@ -484,6 +486,8 @@ bool AppSettings::applySettings(const YAML::Node& node) {
             if (editorNode["ui_scale"]) {
                 setUiScale(editorNode["ui_scale"].as<float>());
             }
+            if (editorNode["language"]) setEditorLanguage(editorNode["language"].as<std::string>());
+            if (editorNode["theme"]) setEditorTheme(editorNode["theme"].as<std::string>());
             if (editorNode["panels"]) {
                 auto panelsNode = editorNode["panels"];
                 if (panelsNode["hierarchy"]) panelVisibility.hierarchy = panelsNode["hierarchy"].as<bool>();
@@ -818,6 +822,8 @@ bool AppSettings::saveSettings() {
         autosaveNode["interval_seconds"] = autosaveIntervalSeconds;
         editorNode["autosave"] = autosaveNode;
         editorNode["ui_scale"] = uiScale;
+        editorNode["language"] = editorLanguage;
+        editorNode["theme"] = editorTheme;
         YAML::Node panelsNode;
         panelsNode["hierarchy"] = panelVisibility.hierarchy;
         panelsNode["inspector"] = panelVisibility.inspector;
@@ -1536,6 +1542,22 @@ void AppSettings::setHubLastLocation(const std::filesystem::path& location) {
 
 float AppSettings::getUiScale() {
     return uiScale;
+}
+
+const std::string& AppSettings::getEditorLanguage() {
+    return editorLanguage;
+}
+
+void AppSettings::setEditorLanguage(const std::string& code) {
+    editorLanguage = code == "en" ? "en" : code.empty() ? "es" : code;
+}
+
+const std::string& AppSettings::getEditorTheme() {
+    return editorTheme;
+}
+
+void AppSettings::setEditorTheme(const std::string& id) {
+    editorTheme = id == "unity_dark" ? "unity_dark" : "retrowave";
 }
 
 void AppSettings::setUiScale(float scale) {

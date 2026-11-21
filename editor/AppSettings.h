@@ -342,6 +342,8 @@ private:
     static bool soundBrowserMatchLoudness;
     static std::filesystem::path hubLastLocation;
     static float uiScale;
+    static std::string editorLanguage;
+    static std::string editorTheme;
     static bool poseDockGrown;
     static PanelVisibilitySettings panelVisibility;
     static GameViewSettings gameViewSettings;
@@ -511,6 +513,13 @@ public:
     // Editor UI Scale (Preferences): multiplies the display scale the system reports
     static float getUiScale();
     static void setUiScale(float scale);
+
+    // Editor language (Preferences): "es" (default) or "en"; see EditorLang
+    static const std::string& getEditorLanguage();
+    static void setEditorLanguage(const std::string& code);
+    // Editor theme (Preferences): "retrowave" (default) or "unity_dark"; see Theme::Style
+    static const std::string& getEditorTheme();
+    static void setEditorTheme(const std::string& id);
 
     // Panels toggled from the View menu
     static PanelVisibilitySettings getPanelVisibility();

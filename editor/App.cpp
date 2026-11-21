@@ -159,6 +159,7 @@
 #include "window/HumanoidConvertDialog.h"
 #include "AppSettings.h"
 #include "Theme.h"
+#include "EditorLang.h"
 #include "resources/fonts/fa-solid-900_ttf.h"
 #include "resources/fonts/jetbrains-mono-regular_ttf.h"
 #include "resources/fonts/roboto-latin-bold_ttf.h"
@@ -2809,7 +2810,9 @@ void editor::App::setup() {
 
     io.ConfigDragClickToInputText = true;
 
+    Theme::setStyle(Theme::styleFromId(AppSettings::getEditorTheme()));
     Theme::apply();
+    EditorLang::set(AppSettings::getEditorLanguage());
 
     // Fonts follow each viewport's monitor DPI. Style paddings are global, so
     // App::show() re-scales them from the main viewport when that DPI changes.

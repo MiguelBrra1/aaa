@@ -5,6 +5,8 @@
 
 #include "imgui.h"
 
+#include <string>
+
 namespace jasperengine::editor {
 
     class Theme {
@@ -54,6 +56,14 @@ namespace jasperengine::editor {
             static ImVec4 AnimationAudio;
             static ImVec4 AnimationSnapshot;
         };
+
+        // The editor's colour scheme (Editor Settings > General > Editor Theme): Unity's dark
+        // skin, or Retrowave (neon magenta and cyan on deep purple). apply() uses it.
+        enum class Style { UnityDark, Retrowave };
+        static void setStyle(Style style);
+        static Style style();
+        static const char* styleId(Style style);              // "unity_dark", "retrowave"
+        static Style styleFromId(const std::string& id);      // unknown ids: Retrowave
 
         static void apply();
         static void applyDpiScale(float dpiScale);

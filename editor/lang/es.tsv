@@ -1,0 +1,1853 @@
+# Traducción al español de la interfaz del editor (EditorLang).
+# Una línea por texto: el texto en inglés exacto (sin la parte ## de ImGui), un tabulador y su traducción.
+# Las líneas que empiezan con # se ignoran. editor/lang/gen_lang.py genera EditorLangTables.inc.
+Delete	Eliminar
+Cancel	Cancelar
+None	Ninguno
+Remove	Quitar
+Rename	Renombrar
+Apply	Aplicar
+Preview	Vista previa
+Duplicate	Duplicar
+Clear	Limpiar
+Revert	Revertir
+Auto	Automático
+Project	Proyecto
+Presets	Ajustes predefinidos
+Animation	Animación
+Save	Guardar
+Terrain	Terreno
+All	Todo
+Palette	Paleta
+Everything	Todo
+Nothing	Nada
+Mode	Modo
+Open	Abrir
+Pixel Art Cleanup	Limpieza de pixel art
+Browse...	Examinar...
+Built-in	Integrado
+Add	Agregar
+Reset	Restablecer
+Preset	Ajuste predefinido
+Rename...	Renombrar...
+Unsaved Changes	Cambios sin guardar
+Edit	Edición
+Pause	Pausa
+Assets	Recursos
+Create	Crear
+Refresh	Actualizar
+Sprite Normal Map	Mapa normal de sprite
+Title Designer	Diseñador de títulos
+Source	Origen
+Fit	Ajustar
+Runtime	Ejecución
+Layers	Capas
+Copy	Copiar
+New Scene	Nueva escena
+Scene	Escena
+Commit	Confirmar
+History	Historial
+Show in Folder	Mostrar en la carpeta
+Name	Nombre
+Undo	Deshacer
+Stop	Detener
+Vertex Animation Baker	Horneado de animación de vértices
+Grid	Cuadrícula
+Advanced	Avanzado
+Points	Puntos
+Invert	Invertir
+Loop	Bucle
+Default	Predeterminado
+File Import Error	Error al importar el archivo
+Pixel Grid	Cuadrícula de píxeles
+Down	Abajo
+Up	Arriba
+Play	Reproducir
+Maximize On Play	Maximizar al reproducir
+Convert Inline Sprite Frames...	Convertir fotogramas de sprite incrustados...
+Version Control	Control de versiones
+Scripts	Scripts
+Window	Ventana
+Scene Diff	Diferencias de escena
+Conflicts	Conflictos
+Detachable Windows	Ventanas desacoplables
+Rename Layout	Renombrar diseño
+Delete Layout	Eliminar diseño
+Dismiss	Descartar
+Description	Descripción
+Frame Selected	Encuadrar selección
+Game	Juego
+Hierarchy	Jerarquía
+Pose Animation	Animación por poses
+Console	Consola
+Sound Browser	Explorador de sonidos
+Noise Graph	Grafo de ruido
+Tile Palette	Paleta de tiles
+Pixel Art Check	Revisión de pixel art
+Sprite Preview	Vista previa de sprite
+Frames	Fotogramas
+Output	Salida
+Height	Altura
+Mirror	Espejo
+Alpha	Alfa
+Snap	Ajustar
+Move Up	Subir
+Move Down	Bajar
+Reverse	Invertir
+Fix	Corregir
+Paste	Pegar
+Location	Ubicación
+Record	Grabar
+Save Failed	Error al guardar
+Previous Frame	Fotograma anterior
+Next Frame	Fotograma siguiente
+Left	Izquierda
+Right	Derecha
+File	Archivo
+Sprite Atlas	Atlas de sprites
+GameObject	GameObject
+Component	Componente
+Add...	Agregar...
+Layouts	Diseños
+Help	Ayuda
+Open Report	Abrir informe
+Copy Report Path	Copiar ruta del informe
+Yes	Sí
+No	No
+Redo	Rehacer
+Rename Asset	Renombrar recurso
+Lock	Bloquear
+Unlock	Desbloquear
+Show History	Mostrar historial
+Add Component	Agregar componente
+Inspector	Inspector
+Animator	Animator
+Profiler	Perfilador
+Bookmarks	Marcadores
+Undo History	Historial de deshacer
+Play Mode Changes	Cambios en modo juego
+Color Picker	Selector de color
+Recorder	Grabadora
+Graph Editor	Editor de grafos
+Audio Captures	Capturas de audio
+Voxel Volume	Volumen de vóxeles
+Voxel Slice	Corte de vóxeles
+Audio Mixer	Mezclador de audio
+Particle Effect	Efecto de partículas
+Reset Integrated Loudness	Restablecer sonoridad integrada
+Tileset Editor	Editor de tilesets
+Input Actions	Acciones de entrada
+Navigation	Navegación
+Texture Synthesis	Síntesis de texturas
+Physics Placement	Colocación con física
+Missing Assets	Recursos faltantes
+References	Referencias
+Frame Debugger	Depurador de fotogramas
+Systems	Sistemas
+Jobs & Memory	Tareas y memoria
+Mesh Optimization Audit	Auditoría de optimización de mallas
+Build Report	Informe de compilación
+Animation Statistics	Estadísticas de animación
+MCP Server	Servidor MCP
+About JasperEngine	Acerca de JasperEngine
+Select	Seleccionar
+Info	Información
+Bake	Hornear
+Settings	Configuración
+Outline	Contorno
+Colour	Color
+Paint	Pintar
+Size	Tamaño
+Seed	Semilla
+Exposed Parameters	Parámetros expuestos
+Detect	Detectar
+Group	Agrupar
+No Title Art open	No hay ningún título abierto
+Stats	Estadísticas
+Auto Save	Guardado automático
+Audio Clip	Clip de audio
+Platform	Plataforma
+Humanoid	Humanoide
+Layout	Diseño
+Time	Tiempo
+Show in Project	Mostrar en el proyecto
+Zoom	Zoom
+Sprite Mode	Modo de sprite
+Add Property	Agregar propiedad
+Add to Palette	Agregar a la paleta
+Keep	Conservar
+Create New Clip...	Crear clip nuevo...
+Browse	Examinar
+Reset All	Restablecer todo
+Comparing...	Comparando...
+Project Hub	Centro de proyectos
+Measure	Medir
+Smooth	Suavizar
+Add Key	Agregar clave
+Frame All	Encuadrar todo
+Play / Pause Preview	Reproducir / pausar vista previa
+Recent Projects	Proyectos recientes
+Sprite Atlas from Selection	Atlas de sprites desde la selección
+Tileset	Tileset
+Native Plugin...	Plugin nativo...
+Asset Database	Base de datos de recursos
+Missing Assets...	Recursos faltantes...
+General	General
+Audio	Audio
+Visual Effects	Efectos visuales
+Analysis	Análisis
+Open the Console	Abrir la consola
+Save Project as Template	Guardar proyecto como plantilla
+New Scene (3D)	Nueva escena (3D)
+New Scene (2D)	Nueva escena (2D)
+New Scene (UI)	Nueva escena (UI)
+Save All	Guardar todo
+Remove Scene from Project	Quitar escena del proyecto
+New Project...	Nuevo proyecto...
+Project Hub...	Centro de proyectos...
+Save Project as Template...	Guardar proyecto como plantilla...
+Open Project...	Abrir proyecto...
+Clear Recent Projects	Borrar proyectos recientes
+Save Project As...	Guardar proyecto como...
+Build Settings...	Configuración de compilación...
+Exit	Salir
+Search All...	Buscar en todo...
+Step	Paso
+Project Settings...	Configuración del proyecto...
+Clear User Settings (PlayerPrefs)...	Borrar ajustes del usuario (PlayerPrefs)...
+Preferences...	Preferencias...
+Shortcuts...	Atajos de teclado...
+Create Folder	Crear carpeta
+Create Lua Script	Crear script Lua
+Create C++ Script	Crear script C++
+Create C++ Source File	Crear archivo fuente C++
+Create C++ Header File	Crear archivo de cabecera C++
+Create HTML Document	Crear documento HTML
+Create Pose Animation	Crear animación por poses
+Create Animation Clip	Crear clip de animación
+Create Animator Controller	Crear Animator Controller
+Create Avatar Mask	Crear máscara de avatar
+Create Animation Montage	Crear montaje de animación
+Create Audio Mixer	Crear mezclador de audio
+Create Sound Event	Crear evento de sonido
+Create Sound Event from Clips	Crear evento de sonido desde clips
+Create Placeholder Sound	Crear sonido provisional
+Reanalyze Audio	Volver a analizar el audio
+Import Sound Essentials	Importar sonidos esenciales
+Create Shake Preset	Crear ajuste de sacudida
+Create Palette	Crear paleta
+Create Procedural Material	Crear material procedural
+Create Tileset	Crear tileset
+Create Sprite Atlas	Crear atlas de sprites
+Create Sprite Atlas from Selection	Crear atlas de sprites desde la selección
+Create Physics Material	Crear material físico
+Create Physics Material 2D	Crear material físico 2D
+Create Title Art	Crear título
+Create Noise Graph	Crear grafo de ruido
+Create Native Plugin...	Crear plugin nativo...
+Show in File Manager	Mostrar en el explorador de archivos
+Duplicate Asset	Duplicar recurso
+Delete Asset	Eliminar recurso
+Import New Asset...	Importar recurso nuevo...
+Reimport All Textures	Reimportar todas las texturas
+Migrate References	Migrar referencias
+Scenes in Build...	Escenas en la compilación...
+Prefabs...	Prefabs...
+Empty Trash...	Vaciar papelera...
+Commit...	Confirmar...
+Revert...	Revertir...
+Diff Against Baseline	Comparar con la base
+Refresh Version Control	Actualizar control de versiones
+Reload Scripts	Recargar scripts
+Rebuild C++ Scripts	Recompilar scripts C++
+Cancel Script Build	Cancelar compilación de scripts
+Create Empty Child	Crear hijo vacío
+Start Recording	Empezar a grabar
+Apply Layout	Aplicar diseño
+Save Layout...	Guardar diseño...
+Save Layout to File...	Guardar diseño en archivo...
+Load Layout from File...	Cargar diseño desde archivo...
+Reset Layout	Restablecer diseño
+Documentation	Documentación
+Keyboard Shortcuts	Atajos de teclado
+Report an Issue...	Reportar un problema...
+Terrain World	Mundo de terreno
+Baked	Horneado
+Sources	Orígenes
+Toon steps	Pasos toon
+Radius	Radio
+Edges	Bordes
+Flat	Plano
+Orbit	Órbita
+Direction	Dirección
+Fill	Relleno
+Brush	Pincel
+Wand	Varita
+Shape	Forma
+Square	Cuadrado
+Strength	Intensidad
+View	Vista
+Show	Mostrar
+Test	Probar
+Position	Posición
+Playback Speed	Velocidad de reproducción
+Overdraw	Sobredibujado
+Bindings	Vínculos
+Mesh	Malla
+Collision	Colisión
+Backdrop	Fondo
+Map Bones...	Asignar huesos...
+Copy Pose	Copiar pose
+Rename Pose	Renombrar pose
+Pose	Pose
+A new random seed	Una semilla aleatoria nueva
+Ungroup	Desagrupar
+Save As Look...	Guardar como estilo...
+Area	Área
+Bake Impostor	Hornear impostor
+Pixel Art	Pixel art
+Alpha Cutoff	Corte de alfa
+Loading preview...	Cargando vista previa...
+Reference Resolution	Resolución de referencia
+In Use	En uso
+Tag	Etiqueta
+Layer	Capa
+Click to select the GameObject	Haz clic para seleccionar el GameObject
+Clear GameObject reference	Quitar referencia al GameObject
+Shader failed to build	El shader no compiló
+Reset to the shader's default	Volver al valor del shader
+Create Primitive	Crear primitiva
+Snapshot	Instantánea
+Audio Preview Error	Error en la vista previa de audio
+Loading...	Cargando...
+Set to None	Poner en Ninguno
+Values	Valores
+Remove value	Quitar valor
+Shadows	Sombras
+Physics	Física
+Apply Palette	Aplicar paleta
+Reduce Colours	Reducir colores
+Colours	Colores
+Distance	Distancia
+Dither	Tramado
+Save As...	Guardar como...
+Unexpose	Dejar de exponer
+Groups	Grupos
+Snapshots	Instantáneas
+Effects	Efectos
+Reload	Recargar
+Properties	Propiedades
+Override Deadzone	Sobrescribir zona muerta
+Display 1	Pantalla 1
+Resolutions	Resoluciones
+Custom...	Personalizado...
+Parameters	Parámetros
+Problems	Problemas
+Scope	Alcance
+Target	Objetivo
+Bake to Sprite Sheet...	Hornear en hoja de sprites...
+Rename Error	Error al renombrar
+Follow	Seguir
+Remove this row	Quitar esta fila
+Add Collider	Agregar colisionador
+Remove Collider	Quitar colisionador
+Remove point	Quitar punto
+Convert to Local	Convertir a local
+Locate	Localizar
+Reset to the default	Volver al valor predeterminado
+Play Mode	Modo juego
+Type	Tipo
+Use	Usar
+Animation Type	Tipo de animación
+Generic	Genérico
+Discard	Descartar
+Foot IK	IK de pies
+Open...	Abrir...
+Normals	Normales
+Precision	Precisión
+Axis	Eje
+Imported	Importado
+Sound Event	Evento de sonido
+Remove Module	Quitar módulo
+Edit Colour...	Editar color...
+Import File...	Importar archivo...
+Overlay	Superposición
+Remove vertex	Quitar vértice
+Brushes	Pinceles
+Anchor	Ancla
+Guides	Guías
+Rulers	Reglas
+Users	Usuarios
+Onion Skin	Papel cebolla
+Pivot	Pivote
+Not imported yet	Aún no importado
+Project Settings	Configuración del proyecto
+Curves	Curvas
+Tangents	Tangentes
+Choose a file	Elige un archivo
+Base	Base
+Shrink	Reducir
+Copy Value	Copiar valor
+Paste Value	Pegar valor
+Font	Fuente
+Get current position from target	Tomar la posición actual del objetivo
+Get current rotation from target	Tomar la rotación actual del objetivo
+Get current scale from target	Tomar la escala actual del objetivo
+Get current color from target	Tomar el color actual del objetivo
+Get current alpha from target	Tomar el alfa actual del objetivo
+UI Scale	Escala de la interfaz
+Off	Desactivado
+Any	Cualquiera
+Save Scene	Guardar escena
+No file selected	Ningún archivo seleccionado
+Save Project	Guardar proyecto
+Project Name	Nombre del proyecto
+Proportional Falloff	Atenuación proporcional
+Status	Estado
+Tools	Herramientas
+Replace	Reemplazar
+Remove from List	Quitar de la lista
+Import	Importar
+Cost	Costo
+Random	Aleatorio
+Terrain Set	Conjunto de terreno
+Clear Measures	Borrar medidas
+Path Tester	Probador de rutas
+Select All	Seleccionar todo
+Color	Color
+Paste at Playhead	Pegar en el cabezal
+Ramp	Rampa
+Curve	Curva
+New token	Nuevo token
+Loading project...	Cargando proyecto...
+Hand Tool	Herramienta mano
+Move Tool	Herramienta mover
+Rotate Tool	Herramienta rotar
+Scale Tool	Herramienta escalar
+Rect Tool	Herramienta rectángulo
+Brush Smaller	Pincel más pequeño
+Brush Larger	Pincel más grande
+Put the Brush Down	Soltar el pincel
+Previous Key	Clave anterior
+Next Key	Clave siguiente
+Delete Keys	Eliminar claves
+Copy Keys	Copiar claves
+Paste Keys	Pegar claves
+Duplicate Keys	Duplicar claves
+Zoom In	Acercar
+Zoom Out	Alejar
+Creating Project	Creando proyecto
+No options available	No hay opciones disponibles
+Title Art: Bake All	Títulos: hornear todo
+Edit Shortcuts...	Editar atajos...
+Reset All to Default	Restablecer todo
+Add Tile	Agregar tile
+Remove Tile	Quitar tile
+Rebuild Overview	Reconstruir vista general
+Import Heightmap...	Importar mapa de alturas...
+Repair Seams	Reparar uniones
+Streaming	Carga progresiva
+Auto Add Tiles	Agregar tiles automáticamente
+Close the Path Tester (Esc)	Cerrar el probador de rutas (Esc)
+Agent Type	Tipo de agente
+Area Mask	Máscara de áreas
+Agents	Agentes
+Areas	Áreas
+Surfaces	Superficies
+Grids	Cuadrículas
+Not baked in this session	Sin hornear en esta sesión
+Rebuild from source	Reconstruir desde el origen
+From Sprite Frames	Desde fotogramas de sprite
+Directions	Direcciones
+Tilt rings	Anillos de inclinación
+Profile	Perfil
+Resolution	Resolución
+Scale with size	Escalar con el tamaño
+Soft edges	Bordes suaves
+Use the current generator	Usar el generador actual
+Ignore outline	Ignorar contorno
+No outline found	No se encontró contorno
+Green	Verde
+Regions	Regiones
+Normal map	Mapa normal
+Writes:	Escribe:
+Height map	Mapa de alturas
+Warnings	Advertencias
+Ambient	Ambiente
+Range	Rango
+Reset light	Restablecer luz
+Azimuth	Azimut
+Tilt	Inclinación
+Round	Redondo
+Tolerance	Tolerancia
+Contiguous	Contiguo
+All frames	Todos los fotogramas
+Mirror X	Espejo X
+Highlight	Resaltar
+Trauma	Trauma
+Load Built-in	Cargar integrado
+Rotation	Rotación
+Loading	Cargando
+Positions	Posiciones
+Edit Points	Editar puntos
+Filmstrip and Checks	Tira de fotogramas y revisiones
+Loop Range	Rango de bucle
+Moving Emitter	Emisor en movimiento
+Triggers	Disparadores
+Poses	Poses
+Overwrite with the current offsets	Sobrescribir con los desplazamientos actuales
+Rename pose to	Renombrar pose a
+Another pose has that name	Otra pose tiene ese nombre
+Jiggle	Bamboleo
+Deform earlier	Deformar antes
+Deform later	Deformar después
+Remove binding	Quitar vínculo
+Import Title Art	Importar título
+Destination folder (in the assets)	Carpeta de destino (en los recursos)
+Round To	Redondear a
+Bit Depth	Profundidad de bits
+Languages	Idiomas
+Import Photoshop Styles as Looks...	Importar estilos de Photoshop como estilos...
+Maps	Mapas
+Convert to 16-bit	Convertir a 16 bits
+Resize...	Cambiar tamaño...
+Height Map	Mapa de alturas
+Import Raw...	Importar RAW...
+Export Raw...	Exportar RAW...
+No height map	Sin mapa de alturas
+Resize Terrain Map	Cambiar tamaño del mapa de terreno
+Import Raw Heightmap	Importar mapa de alturas RAW
+Export Raw Heightmap	Exportar mapa de alturas RAW
+Terrain Info	Información del terreno
+Paint by Rules	Pintar por reglas
+Slope	Pendiente
+Show Layers and History	Mostrar capas e historial
+Show Properties	Mostrar propiedades
+Docs	Documentación
+Glyph Grid	Cuadrícula de glifos
+Metrics	Métricas
+Kerning	Interletrado
+Report	Informe
+Advance	Avance
+Colored	Coloreado
+Add Pair	Agregar par
+Neighbors	Vecinos
+Shadow	Sombra
+Create Bitmap Font	Crear fuente de mapa de bits
+Character	Carácter
+Avatar...	Avatar...
+Apply to All	Aplicar a todo
+Apply to Selected	Aplicar a la selección
+Auto Timing	Tiempos automáticos
+Reset Custom	Restablecer personalizado
+Feel	Sensación
+Humanize	Humanizar
+Reset to Neutral	Volver a neutral
+Ground	Suelo
+Center	Centro
+Previous pose	Pose anterior
+Next pose	Pose siguiente
+Show balance	Mostrar equilibrio
+Ghost during preview	Fantasma durante la vista previa
+Joint angles	Ángulos de articulación
+Map Bones	Asignar huesos
+Jobs	Tareas
+Memory	Memoria
+Workers	Trabajadores
+Lanes	Carriles
+Channels	Canales
+No layer selected	Ninguna capa seleccionada
+Copy Look	Copiar estilo
+Paste Look	Pegar estilo
+Revert to Look	Volver al estilo
+Expose Text as Parameter...	Exponer texto como parámetro...
+Frame on Canvas	Encuadrar en el lienzo
+Clipped to the layer below	Recortado a la capa inferior
+Remove Rim	Quitar borde
+Add Effect...	Agregar efecto...
+Object Collection	Colección de objetos
+Not baked	Sin hornear
+Steering	Dirección
+Obstacle Avoidance	Evitar obstáculos
+Path Finding	Búsqueda de rutas
+Reset Overrides	Restablecer sobrescrituras
+Nav-Grid Brush	Pincel de cuadrícula de navegación
+Paint Area	Pintar área
+Erase	Borrar
+Circle	Círculo
+Remove Tree Prototype	Quitar prototipo de árbol
+Drop a model here	Suelta un modelo aquí
+Bake All	Hornear todo
+Selected Prototype	Prototipo seleccionado
+Fit from Mesh	Ajustar desde la malla
+Mass Place Trees...	Colocar árboles en masa...
+Mass Place Trees	Colocar árboles en masa
+Keep Existing Trees	Conservar árboles existentes
+Exclude Holes	Excluir agujeros
+Estimate For	Estimar para
+Terrain Settings: Foliage	Configuración del terreno: follaje
+Overwrite on Next Save	Sobrescribir al guardar
+Pixels Per Unit	Píxeles por unidad
+Mip Limit	Límite de mipmaps
+One texel per screen pixel	Un texel por píxel de pantalla
+Texture Import Settings	Configuración de importación de texturas
+Not cooked yet	Aún no procesado
+Enabled	Activado
+Open in Cleanup Window	Abrir en la ventana de limpieza
+Font file	Archivo de fuente
+Additional fonts	Fuentes adicionales
+Texture settings	Configuración de textura
+Remove Component	Quitar componente
+Reload (Rebuild)	Recargar (reconstruir)
+Copy Component	Copiar componente
+Keep Component Values After Play	Conservar valores del componente tras reproducir
+Paste Component As New	Pegar componente como nuevo
+Paste Component Values	Pegar valores del componente
+Planar Reflections	Reflejos planos
+Water Wakes	Estelas de agua
+Prefab instance	Instancia de prefab
+Add Tag...	Agregar etiqueta...
+Add Layer...	Agregar capa...
+Change Layer	Cambiar capa
+Component options	Opciones del componente
+Select GameObject	Seleccionar GameObject
+No GameObjects found	No se encontraron GameObjects
+Image file	Archivo de imagen
+No camera in scene	No hay cámara en la escena
+No Fluid Simulation in scene	No hay simulación de fluidos en la escena
+Moving material	Material en movimiento
+Blend Shapes	Blend shapes
+Billboard settings	Configuración de billboard
+Depth shader failed to build	El shader de profundidad no compiló
+Set by the engine	Lo fija el motor
+Not editable	No editable
+Not used by any object	Ningún objeto lo usa
+Remove the pass	Quitar el pase
+Shader	Shader
+Vertex shader file not found	No se encontró el archivo del vertex shader
+Open vertex shader	Abrir vertex shader
+Fragment shader file not found	No se encontró el archivo del fragment shader
+Open fragment shader	Abrir fragment shader
+Reset to the built-in shader	Volver al shader integrado
+Edit Shader Files	Editar archivos del shader
+Select Parts	Seleccionar partes
+Edit the parts	Editar las partes
+Remove submesh	Quitar submalla
+Model Import Error	Error al importar el modelo
+Select a single GameObject	Selecciona un solo GameObject
+Remove animation	Quitar animación
+Password Char	Carácter de contraseña
+No boxes available	No hay cajas disponibles
+Sprite mesh has no submeshes	La malla del sprite no tiene submallas
+Apply frame to sprite	Aplicar fotograma al sprite
+Audio Import Error	Error al importar el audio
+Create tile from this rect	Crear tile desde este rectángulo
+Convert to Terrain World...	Convertir en mundo de terreno...
+Choose...	Elegir...
+Remove capsule	Quitar cápsula
+HTML Document Error	Error en el documento HTML
+Pose Animation Error	Error en la animación por poses
+Script options	Opciones del script
+Remove script	Quitar script
+Edit Script Details	Editar detalles del script
+Header file not found	No se encontró el archivo de cabecera
+Source file not found	No se encontró el archivo fuente
+Default sky	Cielo predeterminado
+Ambient Light (2D)	Luz ambiental (2D)
+Global Illumination	Iluminación global
+Lights	Luces
+Mesh Detail (LOD)	Detalle de malla (LOD)
+Depth Prepass	Prepase de profundidad
+Scene Color	Color de escena
+Ambient Occlusion (SSAO)	Oclusión ambiental (SSAO)
+Reflections (SSR)	Reflejos (SSR)
+Debug View	Vista de depuración
+Canvas Scaler	Escalador de canvas
+Use Project Default	Usar el valor del proyecto
+Fixed Resolution	Resolución fija
+Post-processing	Posprocesado
+Custom Passes	Pases personalizados
+Default Shaders	Shaders predeterminados
+Delete this layer's GameObject	Eliminar el GameObject de esta capa
+Reimport	Reimportar
+Refresh Autotile	Actualizar autotile
+Compress Bounds	Comprimir límites
+Convert to Grid Tilemap	Convertir en tilemap de cuadrícula
+Threshold	Umbral
+Save Palette As...	Guardar paleta como...
+Flicker	Parpadeo
+Reading the texture...	Leyendo la textura...
+Lost Colours	Colores perdidos
+Expose to Script...	Exponer al script...
+Reset to 0 dB	Volver a 0 dB
+Show Project Mixer	Mostrar mezclador del proyecto
+Add Child Group	Agregar grupo hijo
+Save Current Values	Guardar valores actuales
+Set as Start	Fijar como inicio
+On / bypassed	Activo / omitido
+Expose Parameter	Exponer parámetro
+Delete Group	Eliminar grupo
+Asset	Recurso
+Debug	Depuración
+All Control Schemes	Todos los esquemas de control
+Action Maps	Mapas de acciones
+Actions	Acciones
+Add Binding	Agregar asignación
+Add Up/Down/Left/Right Composite	Agregar compuesto Arriba/Abajo/Izquierda/Derecha
+Add Negative/Positive Composite	Agregar compuesto Negativo/Positivo
+Delete Part	Eliminar parte
+Enabled At Start	Activado al inicio
+Consume Controls	Consumir controles
+Exclusive	Exclusivo
+Ignore When UI Consumes	Ignorar si la UI lo consume
+Action Type	Tipo de acción
+Path	Ruta
+Virtual	Virtual
+Normalize	Normalizar
+Gamepad	Mando
+Input Manager Smoothing	Suavizado del Input Manager
+Add a part	Agregar una parte
+Control Schemes	Esquemas de control
+Maximized while playing	Maximizado al reproducir
+Pixel Scale	Escala de píxel
+Preview Colour	Color de vista previa
+Target display	Pantalla de destino
+Aspect	Relación de aspecto
+Right-click to remove	Clic derecho para quitar
+Scale	Escala
+Contact Sheet...	Hoja de contactos...
+Online	En línea
+Offline (simulated)	Sin conexión (simulado)
+Add Game View Resolution	Agregar resolución de la vista de juego
+Device Tier	Nivel del dispositivo
+Thermal State	Estado térmico
+Device	Dispositivo
+No Device	Sin dispositivo
+Language	Idioma
+Custom Device	Dispositivo personalizado
+Simulated Language	Idioma simulado
+IK (live)	IK (en vivo)
+Root Motion (live)	Movimiento raíz (en vivo)
+Avatar	Avatar
+State	Estado
+Unset Every Part	Desasignar todas las partes
+Transforms	Transformaciones
+Sections	Secciones
+Events	Eventos
+Scale With Screen Size	Escalar con el tamaño de pantalla
+Variations	Variaciones
+Exposed Properties	Propiedades expuestas
+Delete this preset	Eliminar este ajuste
+Vertical	Vertical
+Through Ramp	A través de la rampa
+Backdrops	Fondos
+Scene Mode	Modo de escena
+Lints	Avisos
+Capture	Capturar
+Contact Sheet	Hoja de contactos
+Start your title	Empieza tu título
+Image...	Imagen...
+Vector (SVG)...	Vector (SVG)...
+Templates	Plantillas
+All Templates...	Todas las plantillas...
+Panels	Paneles
+Zoom out	Alejar
+Zoom in	Acercar
+Fit image in window	Ajustar imagen a la ventana
+Actual size (1:1)	Tamaño real (1:1)
+Simulate Layers	Simular capas
+Show Bounds	Mostrar límites
+Show Colliders	Mostrar colisionadores
+Show Force Fields	Mostrar campos de fuerza
+Pixel	Píxel
+Project Panel	Panel del proyecto
+Reset to defaults	Restablecer valores predeterminados
+Item view	Vista de elementos
+Icons	Iconos
+Cards	Tarjetas
+Icon size	Tamaño de iconos
+Delete Confirmation	Confirmar eliminación
+Rename File	Renombrar archivo
+File Already Exists	El archivo ya existe
+Invalid Name	Nombre no válido
+Blank	En blanco
+In the open scene	En la escena abierta
+Source:	Origen:
+Normal map:	Mapa normal:
+Auto-regenerate when sources change	Regenerar al cambiar los orígenes
+Effective Tier	Nivel efectivo
+Graph	Grafo
+Preview Size	Tamaño de vista previa
+Terrain Size	Tamaño del terreno
+World Units	Unidades del mundo
+Frame	Fotograma
+Variables	Variables
+Import...	Importar...
+Export...	Exportar...
+XLIFF 1.2 (one per language)...	XLIFF 1.2 (uno por idioma)...
+Copy Source	Copiar original
+Mark Reviewed	Marcar como revisado
+Create a GameObject	Crear un GameObject
+Import Tile Map	Importar mapa de tiles
+No scenes available	No hay escenas disponibles
+Persistent GameObjects (DontDestroyOnLoad)	GameObjects persistentes (DontDestroyOnLoad)
+Running: they go on Stop	En ejecución: desaparecen al detener
+Running: changes revert on Stop	En ejecución: los cambios se revierten al detener
+Add to Prefab	Agregar al prefab
+Scene options	Opciones de escena
+Main Camera	Cámara principal
+Has scripts	Tiene scripts
+Details	Detalles
+Add Cue...	Agregar señal...
+Edit Cue...	Editar señal...
+Sound	Sonido
+Spatial	Espacial
+Volume (dB)	Volumen (dB)
+Pitch	Tono
+Output Group	Grupo de salida
+Audio Source	Fuente de audio
+Transition	Transición
+Time Scale	Escala de tiempo
+Follow Speed	Velocidad de seguimiento
+Apply Font	Aplicar fuente
+Keep Color Scheme	Conservar esquema de color
+Selected Layers	Capas seleccionadas
+Whole Title	Todo el título
+Save As Color Scheme...	Guardar como esquema de color...
+Save As Template...	Guardar como plantilla...
+Replace the whole title?	¿Reemplazar todo el título?
+All categories	Todas las categorías
+Name, category or description words	Nombre, categoría o palabras de la descripción
+New Animation from Template...	Nueva animación desde plantilla...
+Replace Poses in Current Animation	Reemplazar poses de la animación actual
+Append Poses	Añadir poses
+Delete...	Eliminar...
+Save as (project folder)	Guardar como (carpeta del proyecto)
+Delete Template	Eliminar plantilla
+Save as Template	Guardar como plantilla
+Category	Categoría
+The categories in use	Las categorías en uso
+Block Grid	Cuadrícula de bloques
+Procedural Material	Material procedural
+Custom file...	Archivo personalizado...
+Shader Globals...	Globales de shader...
+By index	Por índice
+Keep Mine	Conservar el mío
+Objects for Packing	Objetos para empaquetar
+Packing	Empaquetado
+Pages	Páginas
+Include in Build	Incluir en la compilación
+Exclude	Excluir
+Fix: remove it	Corregir: quitarlo
+Fix: raise Max Size	Corregir: subir el tamaño máximo
+Waste	Desperdicio
+Colliders	Colisionadores
+Convex: 1 piece	Convexo: 1 pieza
+Add Point	Agregar punto
+Note	Nota
+Suspension	Suspensión
+Spring	Resorte
+Motor	Motor
+Stiffness	Rigidez
+Offsets	Desplazamientos
+Break	Ruptura
+Infinity	Infinito
+Infinity: never breaks	Infinito: nunca se rompe
+Friction	Fricción
+Bounciness	Rebote
+Friction Combine	Combinación de fricción
+Bounce Combine	Combinación de rebote
+Remove this bookmark	Quitar este marcador
+Go There	Ir allí
+Add Audio Source	Agregar fuente de audio
+Live Effects	Efectos en vivo
+Characters	Caracteres
+Cooked	Procesado
+Largest:	Mayor:
+Select Models	Seleccionar modelos
+Select Textures	Seleccionar texturas
+Model Import Settings	Configuración de importación del modelo
+Model	Modelo
+No image	Sin imagen
+Other	Otro
+Back to the Feel preset	Volver al ajuste de sensación
+No project cache	Sin caché del proyecto
+Not in Play mode	No está en modo juego
+Straight down, same strength	Recto hacia abajo, misma fuerza
+Bake selection	Hornear selección
+Bake scene	Hornear escena
+Gather	Reunir
+Go to its page (Enter)	Ir a su página (Enter)
+Search every layer	Buscar en todas las capas
+Search the selection only	Buscar solo en la selección
+Look	Estilo
+Fix All	Corregir todo
+Check Rendered	Revisar lo renderizado
+Waiting for shaders to compile...	Esperando a que compilen los shaders...
+Expose as Parameter	Exponer como parámetro
+Add Event	Agregar evento
+Edit Event...	Editar evento...
+Function	Función
+Args	Argumentos
+Show Selection Changes	Mostrar cambios de selección
+Show other scenes	Mostrar otras escenas
+Other scenes (read-only)	Otras escenas (solo lectura)
+Clear History...	Borrar historial...
+Clear Undo History	Borrar historial de deshacer
+Add Click-Safe Fades	Agregar fundidos sin clics
+Import Settings	Configuración de importación
+Provenance	Procedencia
+Match Loudness	Igualar sonoridad
+Search by Type	Buscar por tipo
+Search by Label	Buscar por etiqueta
+Search:	Buscar:
+Search the whole project	Buscar en todo el proyecto
+New Label...	Nueva etiqueta...
+Edit...	Editar...
+Share with Project	Compartir con el proyecto
+All of	Todas de
+Any of	Alguna de
+Asset Labels of the selection	Etiquetas de recurso de la selección
+UI Scale Mode	Modo de escala de UI
+Screen Match Mode	Modo de ajuste de pantalla
+Match	Coincidencia
+Width	Ancho
+Fallback Screen DPI	DPI de pantalla de reserva
+Forced unmapped	Forzado sin asignar
+Mapping	Asignación
+Notes	Notas
+Auto Map All	Asignar todo automáticamente
+Clear Overrides	Borrar sobrescrituras
+No correction	Sin corrección
+Unsaved Avatar	Avatar sin guardar
+Pin	Fijar
+Float	Float
+Int	Int
+Bool	Bool
+Trigger	Trigger
+Set the trigger	Activar el trigger
+Create State	Crear estado
+Empty	Vacío
+From Clip...	Desde clip...
+From New Blend Tree	Desde un Blend Tree nuevo
+Create Sub-State Machine	Crear submáquina de estados
+Make Transition	Crear transición
+Make Transition from Any State	Crear transición desde cualquier estado
+Set as Layer Default State	Fijar como estado predeterminado de la capa
+Retarget	Redirigir
+Transitions	Transiciones
+Mute	Silenciar
+Can Transition To Self	Puede transicionar a sí mismo
+Has Exit Time	Tiene tiempo de salida
+Fixed Duration	Duración fija
+Ordered Interruption	Interrupción ordenada
+Conditions	Condiciones
+Play on	Reproducir en
+Files	Archivos
+Clips	Clips
+Interpolate	Interpolar
+Sample rate	Frecuencia de muestreo
+Sockets	Sockets
+Estimate	Estimar
+Memory per clip	Memoria por clip
+Heatmap	Mapa de calor
+Place	Colocar
+Import options	Opciones de importación
+Clip name	Nombre del clip
+Upsample	Sobremuestrear
+Empty Audio Action	Acción de audio vacía
+Mixer Snapshot	Instantánea del mezclador
+Go to the previous keyframe	Ir al fotograma clave anterior
+Go to the next keyframe	Ir al fotograma clave siguiente
+Playback speed	Velocidad de reproducción
+Animation clip	Clip de animación
+Blend to:	Mezclar con:
+Drawing...	Dibujando...
+Playing	Reproduciendo
+Generate	Generar
+Apply To	Aplicar a
+Foliage Density	Densidad del follaje
+Region	Región
+Whole Terrain	Todo el terreno
+Rectangle	Rectángulo
+Disable unsupported modules	Desactivar módulos no compatibles
+Replace with Preset	Reemplazar con ajuste
+Match Project Palette	Igualar a la paleta del proyecto
+Copy Module	Copiar módulo
+Paste Values	Pegar valores
+Exposed Values	Valores expuestos
+Collision Plane Objects	Objetos de plano de colisión
+Drop a GameObject here	Suelta un GameObject aquí
+Detected from the file	Detectado del archivo
+Apply to Voxel Size	Aplicar al tamaño de vóxel
+Reduce Keys	Reducir claves
+Avatar Configuration	Configuración del avatar
+Convert to Humanoid Clip	Convertir en clip humanoide
+Largest files	Archivos más grandes
+Import the First 256	Importar los primeros 256
+File...	Archivo...
+From Lospec...	Desde Lospec...
+From Texture...	Desde textura...
+From Swatch Library	Desde biblioteca de muestras
+No swatch libraries	No hay bibliotecas de muestras
+Sort into a New Palette	Ordenar en una paleta nueva
+Always Show Indices	Mostrar siempre los índices
+Add a colour	Agregar un color
+Copy Hex	Copiar hex
+Paste Hex	Pegar hex
+Ramps	Rampas
+Fit to N Steps	Ajustar a N pasos
+Cycle Speed	Velocidad de ciclo
+Select Colour	Seleccionar color
+Remove from Ramp	Quitar de la rampa
+Variants	Variantes
+Same as Base	Igual que la base
+Base Color	Color base
+Use Selected Swatch	Usar la muestra seleccionada
+Replace Ramp	Reemplazar rampa
+Check Again	Revisar de nuevo
+Fetch	Obtener
+Unique Colours	Colores únicos
+Usage	Uso
+Texture	Textura
+Follow the Project Window	Seguir la ventana Proyecto
+Apply Palette...	Aplicar paleta...
+Advanced Surface	Superficie avanzada
+Materials	Materiales
+Overlays & Stats	Superposiciones y estadísticas
+Volume	Volumen
+Use Selected	Usar lo seleccionado
+Own material	Material propio
+Replace With	Reemplazar con
+Whole Volume	Todo el volumen
+Convert to collider triggers	Convertir en triggers de colisión
+Warning	Advertencia
+Remove triangle	Quitar triángulo
+Never	Nunca
+Not on water	Fuera del agua
+Touching nothing	Sin contacto
+Choose Asset	Elegir recurso
+Retarget All...	Redirigir todo...
+Clear All	Borrar todo
+Retarget Selected...	Redirigir selección...
+Clear Selected	Borrar selección
+Missing	Faltante
+Resolved by path	Resuelto por ruta
+Orphan metas	Metas huérfanos
+Delete Meta	Eliminar meta
+Read-only linked files	Archivos enlazados de solo lectura
+Transitive	Transitivo
+Unknown size	Tamaño desconocido
+Set Rotation to 0	Poner la rotación en 0
+No mesh selected	Ninguna malla seleccionada
+No mask	Sin máscara
+No asset selected	Ningún recurso seleccionado
+A new fixed seed	Una semilla fija nueva
+Remove the attachment	Quitar el adjunto
+Remove the event	Quitar el evento
+Ground plane	Plano del suelo
+Clips (weights)	Clips (pesos)
+No clips	Sin clips
+Interactable	Interactuable
+Wave trace	Trazo de onda
+Components per type	Componentes por tipo
+Edit Languages...	Editar idiomas...
+Compare Languages	Comparar idiomas
+Edit Languages	Editar idiomas
+Make Source...	Hacer original...
+Swap texts	Intercambiar textos
+Copy...	Copiar...
+Remove Language?	¿Quitar idioma?
+Add Language	Agregar idioma
+Add Project Languages	Agregar los idiomas del proyecto
+Revert to Source	Volver al original
+Apply to Source	Aplicar al original
+No recent Title Art	No hay títulos recientes
+Duplicate As...	Duplicar como...
+Realtime	Tiempo real
+Devices	Dispositivos
+Placement	Colocación
+In pixels	En píxeles
+Safe Areas	Áreas seguras
+Effect Reach	Alcance del efecto
+Clear Guides	Borrar guías
+Snap Increments (Ctrl)	Incrementos de ajuste (Ctrl)
+Fit (Home)	Ajustar (Inicio)
+Animation Clips	Clips de animación
+New Animator Controller...	Nuevo Animator Controller...
+Save the prefab asset (Ctrl+S)	Guardar el prefab (Ctrl+S)
+Open Prefab Asset	Abrir prefab
+Match Overrides	Igualar sobrescrituras
+Physics Placement settings	Configuración de colocación con física
+Window layout	Diseño de ventanas
+Override 3D Settings	Sobrescribir configuración 3D
+Attenuation	Atenuación
+Drop audio clips here	Suelta clips de audio aquí
+Match Levels	Igualar niveles
+Play On	Reproducir en
+Knots	Nudos
+Live Terrain	Terreno en vivo
+Convert heightmap to 16-bit	Convertir el mapa de alturas a 16 bits
+Profile Points (at most 32)	Puntos de perfil (máximo 32)
+Hard	Duro
+Grounded	En el suelo
+Span Overrides (at most 16)	Sobrescrituras de tramo (máximo 16)
+Check again (F5)	Revisar de nuevo (F5)
+Checking...	Revisando...
+Jump Anyway	Saltar de todos modos
+Restore This Version	Restaurar esta versión
+Open in Animation Window	Abrir en la ventana Animación
+Extract to .anim...	Extraer a .anim...
+Convert to Humanoid Clip...	Convertir en clip humanoide...
+Model Clip	Clip del modelo
+The bindings are not checked	Los vínculos no se revisan
+States	Estados
+Use as Project Mixer	Usar como mezclador del proyecto
+Root Motion	Movimiento raíz
+Select the GameObject	Seleccionar el GameObject
+Model Clips	Clips del modelo
+Clip	Clip
+Sprite	Sprite
+All Frames	Todos los fotogramas
+Speed	Velocidad
+Reading...	Leyendo...
+Slices	Cortes
+Trim	Recortar
+Background	Fondo
+No scene open	No hay escena abierta
+Importing...	Importando...
+No layers	Sin capas
+Exclude from Import	Excluir de la importación
+Compare	Comparar
+Unapplied Import Settings	Configuración de importación sin aplicar
+Effective	Efectivo
+Preview Quality	Calidad de vista previa
+As Project	Como el proyecto
+Rig	Esqueleto
+Configure Avatar...	Configurar avatar...
+Project Default	Valor del proyecto
+Reference layers are never imported	Las capas de referencia nunca se importan
+No clips imported yet	Aún no se importaron clips
+Extract Clips	Extraer clips
+Aseprite Importer	Importador de Aseprite
+First frame	Primer fotograma
+Previous key (Alt+,)	Clave anterior (Alt+,)
+Pause (Space)	Pausa (Espacio)
+Next key (Alt+.)	Clave siguiente (Alt+.)
+Last frame	Último fotograma
+Seconds	Segundos
+Preview over	Vista previa sobre
+Samples	Muestras
+Add Event at the playhead	Agregar evento en el cabezal
+Reload Models in Node Hierarchy	Recargar modelos en la jerarquía de nodos
+Dopesheet	Hoja de claves
+Interpolation	Interpolación
+Move Playhead Here	Mover el cabezal aquí
+Add Key at Playhead	Agregar clave en el cabezal
+Remove Property	Quitar propiedad
+Close	Cerrar
+Native	Nativo
+Codec support	Compatibilidad de códecs
+Plays on	Se reproduce en
+Optimize for streaming	Optimizar para streaming
+Create Mask from Selection...	Crear máscara desde la selección...
+Open Image...	Abrir imagen...
+Try a Demo	Probar una demo
+Outlines	Contornos
+Detect Again	Detectar de nuevo
+Format	Formato
+Write	Escribir
+Save as Import Step	Guardar como paso de importación
+Copy Recipe	Copiar receta
+Open in Aseprite	Abrir en Aseprite
+Specks	Motas
+Remove Background	Quitar fondo
+Shrink To Width	Reducir al ancho
+Hand Tools	Herramientas manuales
+Running...	Ejecutando...
+Animations	Animaciones
+Include	Incluir
+Split Here	Dividir aquí
+Join With Next	Unir con el siguiente
+Lines	Líneas
+Files Changed	Archivos cambiados
+Code Editor settings	Configuración del editor de código
+Add event	Agregar evento
+Show Diff	Mostrar diferencias
+Placeholder Sound	Sonido provisional
+Loudness Target	Sonoridad objetivo
+Delete Wire	Eliminar conexión
+Add Fallback Font...	Agregar fuente de reserva...
+Covers My Text	Cubre mi texto
+Import Font File...	Importar archivo de fuente...
+Interval	Intervalo
+Easing	Suavizado
+Remove easing	Quitar suavizado
+Keys	Claves
+Remove key	Quitar clave
+Keep Selected	Conservar selección
+Keep All	Conservar todo
+Options	Opciones
+Use for sampling	Usar para muestrear
+Sample mask	Máscara de muestreo
+Guide	Guía
+Companion Maps	Mapas complementarios
+Region to Regenerate	Región a regenerar
+Mask image	Imagen de máscara
+Transparency	Transparencia
+Channel	Canal
+Invert (regenerate the opaque pixels)	Invertir (regenerar los píxeles opacos)
+Border	Borde
+Target Guide	Guía de destino
+Quality	Calidad
+Guide decay	Decaimiento de la guía
+Reset to preset	Volver al ajuste
+Save as	Guardar como
+Generate a result first	Genera un resultado primero
+Tile 3x3	Mosaico 3x3
+Uncertainty	Incertidumbre
+Prefab	Prefab
+Instances of different Prefabs	Instancias de prefabs distintos
+No overrides	Sin sobrescrituras
+Revert All	Revertir todo
+Apply All	Aplicar todo
+Selected parts	Partes seleccionadas
+Whole layer	Toda la capa
+Effects need a selected layer	Los efectos necesitan una capa seleccionada
+Choose a parent scene	Elige una escena padre
+Show Agent Paths	Mostrar rutas de agentes
+Color By	Colorear por
+Opacity	Opacidad
+Contour Interval	Intervalo de curvas de nivel
+Editor camera	Cámara del editor
+Mesh Analysis	Análisis de malla
+Viewing through this camera	Viendo a través de esta cámara
+Exit camera preview (Esc)	Salir de la vista de cámara (Esc)
+Exit tile painting	Salir del pintado de tiles
+Snap Preview	Vista previa con ajuste
+Pixel Move Snap	Ajuste de movimiento por píxel
+Similar to Selected	Similar a la selección
+Any type	Cualquier tipo
+Auto-play	Reproducción automática
+Match loudness	Igualar sonoridad
+Reading sounds...	Leyendo sonidos...
+Shader Name	Nombre del shader
+Will create:	Se creará:
+Show All in Console	Mostrar todo en la consola
+Prefabs	Prefabs
+Select Base	Seleccionar base
+Start As	Empezar como
+Prebuilt player (no compiler needed)	Reproductor precompilado (sin compilador)
+Debug keystore (testing only)	Keystore de depuración (solo pruebas)
+Keystore...	Keystore...
+Simulator	Simulador
+Keystore Passwords	Contraseñas del keystore
+Steam Deck target	Destino Steam Deck
+Remove this target	Quitar este destino
+Add Target	Agregar destino
+Prepare	Preparar
+Verify	Verificar
+Upload...	Subir...
+Deploy to Deck	Instalar en el Deck
+Rollback	Revertir versión
+Upload to Steam	Subir a Steam
+Create publishing.json	Crear publishing.json
+No saved scenes	No hay escenas guardadas
+Restore default (Follow Game Canvas)	Restaurar predeterminado (seguir el canvas del juego)
+Screen Transitions	Transiciones de pantalla
+Particle Checks	Revisiones de partículas
+Material Checks	Revisiones de materiales
+Clear Mesh Cache	Borrar caché de mallas
+Open Mesh Optimization Audit	Abrir auditoría de optimización de mallas
+Inherit	Heredar
+Thermal Response	Respuesta térmica
+Device Tiers	Niveles de dispositivo
+Upload Budget	Presupuesto de subida
+Clear Texture Cache	Borrar caché de texturas
+Reset rebinding overrides	Restablecer reasignaciones
+Apply Pixel Art Preset...	Aplicar ajuste de pixel art...
+Disable All	Desactivar todo
+Enable All	Activar todo
+New Tag Name	Nombre de la etiqueta nueva
+New Sorting Layer	Nueva capa de orden
+Rename it on every asset	Renombrarla en todos los recursos
+Game Defaults	Valores del juego
+Allow Backup	Permitir copia de seguridad
+Fullscreen	Pantalla completa
+Linked	Vinculado
+Linked to the user's identity	Vinculado a la identidad del usuario
+Tracking	Seguimiento
+Used to track the user	Se usa para rastrear al usuario
+Privacy Manifest Preview	Vista previa del manifiesto de privacidad
+Input Manager	Input Manager
+Redo (Ctrl+Y)	Rehacer (Ctrl+Y)
+Reset to Unity Defaults	Restablecer valores de Unity
+Add an action	Agregar una acción
+Duplicate the action	Duplicar la acción
+Move up	Subir
+Move down	Bajar
+Identity	Identidad
+Copy Live Values to Defaults	Copiar valores en vivo a los predeterminados
+Grid By Cell Count	Cuadrícula por cantidad de celdas
+Grid By Cell Size	Cuadrícula por tamaño de celda
+Cell Size	Tamaño de celda
+Offset & Padding	Desplazamiento y relleno
+Build Settings	Configuración de compilación
+Set As Start Scene	Fijar como escena inicial
+Start Scene	Escena inicial
+C++ Source Project	Proyecto fuente C++
+Web players use WebGL 2	Los reproductores web usan WebGL 2
+Reset Shader Overrides	Restablecer sobrescrituras de shaders
+Platform Presets	Ajustes por plataforma
+By Graphics API	Por API gráfica
+Add to Target Platforms	Agregar a las plataformas de destino
+Shaders	Shaders
+Textures	Texturas
+Save...	Guardar...
+Cook Textures Now	Procesar texturas ahora
+Build	Compilar
+Publish	Publicar
+Player Settings...	Configuración del reproductor...
+Directory Not Empty	La carpeta no está vacía
+Add Shader	Agregar shader
+Effect	Efecto
+Properties:	Propiedades:
+Copy Errors	Copiar errores
+Scenes in Build	Escenas en la compilación
+Convert	Convertir
+Platforms	Plataformas
+Android language	Idioma de Android
+Java package	Paquete Java
+Apple language	Idioma de Apple
+Methods	Métodos
+Async	Asíncrono
+Files:	Archivos:
+No results	Sin resultados
+Scene Name	Nombre de la escena
+New Script	Script nuevo
+Existing Script	Script existente
+Template	Plantilla
+C++ Subclass	Subclase C++
+C++ Script Class	Clase de script C++
+Lua Script	Script Lua
+Script File	Archivo de script
+Header File	Archivo de cabecera
+Script Files Already Exist	Los archivos de script ya existen
+Base Layer	Capa base
+Back	Atrás
+Restore default	Restaurar predeterminado
+Preferences	Preferencias
+Default Build Directory	Carpeta de compilación predeterminada
+Show Project Hub at Startup	Mostrar el centro de proyectos al iniciar
+Editor VSync	VSync del editor
+Auto Save Scenes	Guardar escenas automáticamente
+Auto Save Interval (s)	Intervalo de guardado automático (s)
+Backups	Copias de seguridad
+Open Backup Folder	Abrir carpeta de copias
+Network	Red
+Offline	Sin conexión
+HTML UI	UI HTML
+Import Remote Resources	Importar recursos remotos
+Verbose Diagnostics	Diagnóstico detallado
+Hot Reload	Recarga en caliente
+Font Size	Tamaño de fuente
+Cage	Jaula
+Behind Geometry	Detrás de la geometría
+Stretch	Estirar
+Stretch Colouring	Color por estiramiento
+Falloff Curve	Curva de atenuación
+Default Radius	Radio predeterminado
+Picking	Selección
+Drops	Soltar
+Views	Vistas
+Auto Refresh	Actualización automática
+Watcher	Vigilante
+Polling Interval	Intervalo de sondeo
+Log Reloads	Registrar recargas
+Script Changes While Playing	Cambios de scripts durante la reproducción
+Reload C++ Scripts During Play	Recargar scripts C++ al reproducir
+External Script Editor	Editor de scripts externo
+Command	Comando
+Desktop Build	Compilación de escritorio
+Web Build	Compilación web
+Video Import	Importación de video
+Shipping	Publicación
+Detecting...	Detectando...
+Player Runtimes	Reproductores
+Install from file...	Instalar desde archivo...
+Compiler	Compilador
+Max Undo Steps	Pasos máximos de deshacer
+Undo Memory Limit (MB)	Límite de memoria para deshacer (MB)
+Record Selection in Undo	Registrar la selección al deshacer
+Review Play Mode Changes	Revisar cambios del modo juego
+Log File Level	Nivel del archivo de registro
+Capture Backtrace on Errors	Capturar la traza en errores
+Show Source Location	Mostrar ubicación en el código
+Category Levels	Niveles por categoría
+Highlight Agent Edits	Resaltar ediciones de agentes
+Hang Watchdog	Vigilante de bloqueos
+Report After (s)	Informar después de (s)
+Show Crash Notice On Startup	Mostrar aviso de fallo al iniciar
+Reports	Informes
+Crash Reports	Informes de fallos
+Open Crash Reports Folder	Abrir carpeta de informes de fallos
+Locking	Bloqueo
+Lock on Edit	Bloquear al editar
+Status Poll (s)	Sondeo de estado (s)
+Lock Poll (s)	Sondeo de bloqueo (s)
+Auto Fetch (min)	Obtener automáticamente (min)
+Code Editor	Editor de código
+Show Changes in Code Editor	Mostrar cambios en el editor de código
+Merge	Fusionar
+Smart Merge	Fusión inteligente
+Set Up Smart Merge	Configurar fusión inteligente
+Needs a Git repository	Necesita un repositorio Git
+Smart merge: not set up	Fusión inteligente: sin configurar
+Shader Cache	Caché de shaders
+Clear Shader Cache	Borrar caché de shaders
+Enable	Activar
+Freeze	Congelar
+Hold the last captured frame	Mantener el último fotograma capturado
+Draw list	Lista de dibujo
+Preparing the preview...	Preparando la vista previa...
+Deep Profile Lua	Perfilado profundo de Lua
+Current	Actual
+Hide module	Ocultar módulo
+Add module	Agregar módulo
+Timeline	Línea de tiempo
+Reset view	Restablecer vista
+Reset peak	Restablecer pico
+By category	Por categoría
+By owner	Por propietario
+Reading the diff...	Leyendo las diferencias...
+Edit Anyway	Editar de todos modos
+Locked by you	Bloqueado por ti
+Not locked	Sin bloquear
+Revert to Baseline	Volver a la base
+Copy Baseline Value	Copiar valor de la base
+Changed only	Solo cambios
+Message	Mensaje
+Commit and Push	Confirmar y enviar
+Diff with Working Copy	Comparar con la copia de trabajo
+Copy Revision	Copiar revisión
+Reading the history...	Leyendo el historial...
+Load More	Cargar más
+Merging...	Fusionando...
+Ours	Nuestro
+Theirs	Suyo
+Open in External Tool	Abrir en herramienta externa
+Sprite Sheet	Hoja de sprites
+Sequence	Secuencia
+Previous Change (Shift+Alt+F5)	Cambio anterior (Shift+Alt+F5)
+Next Change (Alt+F5)	Cambio siguiente (Alt+F5)
+Close (Esc)	Cerrar (Esc)
+Toggle Replace	Alternar reemplazo
+Previous (Shift+Enter)	Anterior (Shift+Enter)
+Next (Enter)	Siguiente (Enter)
+Close (Escape)	Cerrar (Escape)
+Replace Next (Enter)	Reemplazar siguiente (Enter)
+Replace All (Shift+Enter)	Reemplazar todo (Shift+Enter)
+Projects	Proyectos
+Open Without Last Scene	Abrir sin la última escena
+Locate...	Localizar...
+New Project	Nuevo proyecto
+Base Resolution	Resolución base
+Custom	Personalizado
+Open Folder...	Abrir carpeta...
+From Zip...	Desde zip...
+Into	En
+Add to Custom	Agregar a personalizados
+Glyph Layer	Capa de glifos
+Automatic (the exposed text's layer)	Automático (la capa del texto expuesto)
+Outer Glow	Resplandor exterior
+Copy Material	Copiar material
+New Link	Nuevo vínculo
+Unlink	Desvincular
+Project HDRIs	HDRIs del proyecto
+Band	Banda
+Inherit Lights	Heredar luces
+Override Lights	Sobrescribir luces
+Use Document Camera	Usar la cámara del documento
+Make 3D Style	Crear estilo 3D
+Ease	Suavizado
+Relative	Relativo
+Stagger	Escalonar
+Convert to Drive	Convertir en control
+Save as Preset...	Guardar como ajuste...
+Add Preset	Agregar ajuste
+Onion	Cebolla
+Wrap	Ajustar línea
+Role	Rol
+Next	Siguiente
+Prerender	Prerenderizar
+Rim Width	Ancho del borde
+Applied top to bottom	Se aplica de arriba hacia abajo
+Pick Layer	Elegir capa
+Follow Layer	Seguir capa
+Follow which layer?	¿Qué capa seguir?
+Stack	Pila
+Remove Mask	Quitar máscara
+Ring	Anillo
+Remote resources	Recursos remotos
+No remote URLs	Sin URLs remotas
+Remove unused imports	Quitar importaciones sin usar
+Diagnostics	Diagnóstico
+Layout to save:	Diseño a guardar:
+Finalising...	Finalizando...
+Game View	Vista de juego
+Looking for FFmpeg...	Buscando FFmpeg...
+Open Preferences...	Abrir preferencias...
+Look Again	Buscar de nuevo
+Open Output Folder	Abrir carpeta de salida
+Paint (B)	Pintar (B)
+Active Tilemap	Tilemap activo
+Create Layer...	Crear capa...
+Keep Terrain	Conservar terreno
+Focus On	Enfocar en
+Add Selection	Agregar selección
+Save Stamp	Guardar sello
+Tiles	Tiles
+Terrains	Terrenos
+Stamps	Sellos
+Tile Shape	Forma del tile
+Apply Terrain Template...	Aplicar plantilla de terreno...
+Skip Empty	Omitir vacíos
+Apply Slicing	Aplicar corte
+Add Source	Agregar origen
+Kind	Clase
+Auto from Alpha	Automático desde alfa
+Add Polygon	Agregar polígono
+Remove Polygon	Quitar polígono
+Random Start	Inicio aleatorio
+Add Selected as Frames	Agregar selección como fotogramas
+Clear Frames	Borrar fotogramas
+Centre Terrain	Terreno central
+Property Schema	Esquema de propiedades
+Terrain Sets	Conjuntos de terreno
+Two Surface	Dos superficies
+Add Set	Agregar conjunto
+Add Terrain	Agregar terreno
+Coverage	Cobertura
+Allow Transforms	Permitir transformaciones
+Apply Terrain Template	Aplicar plantilla de terreno
+Scene Camera	Cámara de escena
+Default view	Vista predeterminada
+Overwrite	Sobrescribir
+Layout: Single, Split, Quad	Diseño: única, dividida, cuádruple
+More Scene view tools	Más herramientas de la vista de escena
+Exact Pick	Selección exacta
+Align to Surface	Alinear a la superficie
+Shaded	Sombreado
+Shaded + Shadows	Sombreado + sombras
+Maximize	Maximizar
+Toward	Hacia
+Replace offsets	Reemplazar desplazamientos
+No lattice selected	Ninguna rejilla seleccionada
+Select None	No seleccionar nada
+Select Exterior	Seleccionar exterior
+Select Face	Seleccionar cara
+Expand	Expandir
+Reset Selected	Restablecer selección
+Presets...	Ajustes...
+Fit to Targets	Ajustar a los objetivos
+Fit to Selection...	Ajustar a la selección...
+Copy as Lua	Copiar como Lua
+Falloff	Atenuación
+Lattice Preferences...	Preferencias de rejilla...
+Release to delete the stop	Suelta para eliminar la parada
+Stop opacity	Opacidad de la parada
+Stop location	Posición de la parada
+Delete stop (Delete)	Eliminar parada (Supr)
+Vivid	Vivo
+No gradient presets	Sin degradados predefinidos
+Gradient Editor	Editor de degradados
+Copy Property Path	Copiar ruta de la propiedad
+Expose as Parameter...	Exponer como parámetro...
+Logarithmic slider	Deslizador logarítmico
+Clamped Auto	Automático limitado
+Free Smooth	Suave libre
+Broken	Rota
+Align	Alinear
+Sharpen	Enfocar
+Delete Key	Eliminar clave
+Value	Valor
+Start	Inicio
+Save Current as Preset	Guardar actual como ajuste
+Delete Preset	Eliminar ajuste
+Previous colour (click to restore)	Color anterior (clic para restaurar)
+Hexadecimal	Hexadecimal
+Intensity	Intensidad
+New Library...	Nueva biblioteca...
+New Project Library...	Nueva biblioteca del proyecto...
+Reveal in File Browser	Mostrar en el explorador de archivos
+New Library	Nueva biblioteca
+Rename Library	Renombrar biblioteca
+Swatches	Muestras
+Add the current colour	Agregar el color actual
+Move Left	Mover a la izquierda
+Move Right	Mover a la derecha
+Rename Swatch	Renombrar muestra
+Snap to Palette	Ajustar a la paleta
+Palettes	Paletas
+Click to edit the gradient	Haz clic para editar el degradado
+No .palette in the project	No hay ningún .palette en el proyecto
+Blend in Linear Space	Mezclar en espacio lineal
+Copy URL	Copiar URL
+Copy connect command	Copiar comando de conexión
+Serve over HTTP	Servir por HTTP
+Copy token	Copiar token
+Allow changes	Permitir cambios
+HTTP clients:	Clientes HTTP:
+Auto-scroll	Desplazamiento automático
+Asset Pipeline	Proceso de recursos
+Scene Running	Escena en ejecución
+Undo Paint Stroke	Deshacer trazo
+Redo Paint Stroke	Rehacer trazo
+Undo Cleanup Edit	Deshacer edición de limpieza
+Redo Cleanup Edit	Rehacer edición de limpieza
+No Recent Projects	No hay proyectos recientes
+Restart Required	Requiere reiniciar
+Experimental Feature	Función experimental
+Clear User Settings	Borrar ajustes del usuario
+Empty Trash	Vaciar papelera
+Open in Browser	Abrir en el navegador
+Busy	Ocupado
+Recover Unsaved Changes	Recuperar cambios sin guardar
+Tags and Layers	Etiquetas y capas
+Graphics	Gráficos
+Initializing engine...	Iniciando el motor...
+Initializing graphics...	Iniciando los gráficos...
+Always	Siempre
+Play cannot start now	No se puede reproducir ahora
+External Tools	Herramientas externas
+Error	Error
+Scene View Camera	Cámara de la vista de escena
+Game view	Vista de juego
+Import Unity Particle System	Importar sistema de partículas de Unity
+File outside the assets directory	Archivo fuera de la carpeta de recursos
+Discard Changes	Descartar cambios
+Edit Synthesis	Editar síntesis
+Don't Save	No guardar
+Saving Scene	Guardando escena
+Directional Light	Luz direccional
+Cut	Cortar
+Paste As Child	Pegar como hijo
+Enter or leave Play mode	Entrar o salir del modo juego
+Pause or resume Play mode	Pausar o reanudar el modo juego
+Play or Resume	Reproducir o reanudar
+Release Game Cursor	Liberar el cursor del juego
+Import Title Art...	Importar título...
+Clear Shader Warm-up List	Borrar lista de precalentamiento de shaders
+Apply the Default layout	Aplicar el diseño predeterminado
+Select Tool	Herramienta seleccionar
+Paint Tool	Herramienta pintar
+Box Tool	Herramienta caja
+Fill a rectangle of cells	Rellenar un rectángulo de celdas
+Line Tool	Herramienta línea
+Paint a line of cells	Pintar una línea de celdas
+Flood Tool	Herramienta relleno
+Flood fill contiguous equal cells	Rellenar celdas iguales contiguas
+Eraser Tool	Herramienta borrador
+Erase cells	Borrar celdas
+Picker Tool	Herramienta cuentagotas
+Rotate Brush Clockwise	Rotar pincel en sentido horario
+Rotate Brush Counter-Clockwise	Rotar pincel en sentido antihorario
+Flip Brush Horizontally	Voltear pincel horizontalmente
+Flip Brush Vertically	Voltear pincel verticalmente
+Copy Cells into the Brush	Copiar celdas al pincel
+Delete Selected Cells	Eliminar celdas seleccionadas
+Pan the Scene view	Desplazar la vista de escena
+Toggle Global/Local	Alternar global/local
+Scene View	Vista de escena
+Front View	Vista frontal
+Back View	Vista trasera
+Right View	Vista derecha
+Left View	Vista izquierda
+Top View	Vista superior
+Bottom View	Vista inferior
+Hide Selection	Ocultar selección
+Show All	Mostrar todo
+Pixel Zoom 1x	Zoom de píxel 1x
+Pixel Zoom Game	Zoom de píxel del juego
+Toggle Pick Lock	Alternar bloqueo de selección
+Delete Measure	Eliminar medida
+Cycle Overlapping Objects	Recorrer objetos superpuestos
+Fly Through (3D)	Vuelo libre (3D)
+Hold Shift to move faster	Mantén Shift para ir más rápido
+Orbit (3D)	Órbita (3D)
+Orbit around the view's pivot	Orbitar alrededor del pivote de la vista
+Pan	Desplazar
+Move the view	Mover la vista
+Mouse Wheel	Rueda del ratón
+Zoom the view	Hacer zoom en la vista
+Drop (Physics)	Soltar (física)
+Drop the selection under gravity	Soltar la selección con gravedad
+Snap onto Surfaces (Physics)	Ajustar a superficies (física)
+Cancel Gesture	Cancelar gesto
+Lattice	Rejilla
+Select No Points	No seleccionar puntos
+Invert Point Selection	Invertir selección de puntos
+Expand Point Selection	Expandir selección de puntos
+Shrink Point Selection	Reducir selección de puntos
+Toggle Falloff	Alternar atenuación
+Voxel Brush	Pincel de vóxeles
+Dig	Excavar
+Pick	Elegir
+Pick Material	Elegir material
+Brush Weaker	Pincel más débil
+Brush Stronger	Pincel más fuerte
+Terrain Brush	Pincel de terreno
+Raise	Elevar
+Set Height	Fijar altura
+Noise	Ruido
+Terrace	Terrazas
+Erode	Erosionar
+Stamp	Sello
+Paint Texture	Pintar textura
+Paint Details	Pintar detalles
+Paint Trees	Pintar árboles
+Cut Holes	Cortar agujeros
+Pick Height	Elegir altura
+Invert Slope Filter	Invertir filtro de pendiente
+Height Overlay	Superposición de altura
+Slope Overlay	Superposición de pendiente
+Contours Overlay	Superposición de curvas de nivel
+Layer Weights Overlay	Superposición de pesos de capa
+Overlay Off	Sin superposición
+Key Modified Properties	Poner clave en propiedades modificadas
+At the playhead	En el cabezal
+Frame Selected Keys	Encuadrar claves seleccionadas
+Frame All Keys	Encuadrar todas las claves
+Record mode on or off	Activar o desactivar el modo grabación
+Align Start to Playhead	Alinear inicio al cabezal
+Align Peak to Playhead	Alinear pico al cabezal
+Align End to Playhead	Alinear final al cabezal
+Add Audio Cue	Agregar señal de audio
+Add Source Cue	Agregar señal de fuente
+Add Snapshot Cue	Agregar señal de instantánea
+Add Audio Clip Action	Agregar acción de clip de audio
+Add Sound Event Action	Agregar acción de evento de sonido
+Add Mixer Snapshot Action	Agregar acción de instantánea del mezclador
+Select Previous Pose	Seleccionar pose anterior
+Select Next Pose	Seleccionar pose siguiente
+Move Poses Left	Mover poses a la izquierda
+Move Poses Right	Mover poses a la derecha
+Select First Pose	Seleccionar primera pose
+Select Last Pose	Seleccionar última pose
+Duplicate Poses	Duplicar poses
+Duplicate Poses Mirrored	Duplicar poses en espejo
+Mirror Poses	Reflejar poses
+Delete Poses	Eliminar poses
+Ground Pose	Apoyar pose en el suelo
+Paste Pose	Pegar pose
+Add Pose	Agregar pose
+Global Edit	Edición global
+Edit every pose at once	Editar todas las poses a la vez
+Play / Pause	Reproducir / pausar
+First Frame	Primer fotograma
+Last Frame	Último fotograma
+Run Pixel Art Check	Ejecutar revisión de pixel art
+Fix Selected Finding	Corregir el hallazgo seleccionado
+Fix All Pixel Art Findings	Corregir todos los hallazgos de pixel art
+Write Pixel Art Cleanup	Escribir limpieza de pixel art
+Next Lint Spot	Siguiente aviso
+Previous Lint Spot	Aviso anterior
+Nudge Frame Left	Mover fotograma a la izquierda
+Nudge Frame Right	Mover fotograma a la derecha
+Nudge Frame Up	Mover fotograma arriba
+Nudge Frame Down	Mover fotograma abajo
+Delete Colours	Eliminar colores
+Duplicate Colours	Duplicar colores
+Move Colours Left	Mover colores a la izquierda
+Move Colours Right	Mover colores a la derecha
+Flicker Compare	Comparar con parpadeo
+Copy Assets	Copiar recursos
+Cut Assets	Cortar recursos
+Paste Assets	Pegar recursos
+Duplicate Assets	Duplicar recursos
+Select All Assets	Seleccionar todos los recursos
+Delete Assets	Eliminar recursos
+Resize Items	Cambiar tamaño de elementos
+Stop Preview	Detener vista previa
+Key Modified Fields	Poner clave en campos modificados
+Dopesheet / Curves	Hoja de claves / curvas
+Add Animation Preset...	Agregar ajuste de animación...
+Save Animation as Preset...	Guardar animación como ajuste...
+Toggle Pivot/Center	Alternar pivote/centro
+Fit Canvas	Ajustar lienzo
+Actual Size	Tamaño real
+Edit Text	Editar texto
+Find Setting	Buscar ajuste
+Select All Layers	Seleccionar todas las capas
+Copy Layers	Copiar capas
+Cut Layers	Cortar capas
+Paste Layers	Pegar capas
+Clipping Mask	Máscara de recorte
+Bring Forward	Traer adelante
+Send Backward	Enviar atrás
+Bring to Front	Traer al frente
+Send to Back	Enviar al fondo
+Hide Layers	Ocultar capas
+Lock Layers	Bloquear capas
+Nudge Left	Mover a la izquierda
+Nudge Right	Mover a la derecha
+Nudge Up	Mover arriba
+Nudge Down	Mover abajo
+Select Parent	Seleccionar padre
+Bake Now	Hornear ahora
+Next Language	Idioma siguiente
+Previous Language	Idioma anterior
+Search Sounds	Buscar sonidos
+Next Sound	Sonido siguiente
+Previous Sound	Sonido anterior
+Play or Stop Sound	Reproducir o detener sonido
+Use Sound	Usar sonido
+Select All Sounds	Seleccionar todos los sonidos
+Match Clip Levels	Igualar niveles de clips
+Play as Music	Reproducir como música
+Detect Tempo	Detectar tempo
+Copy Message	Copiar mensaje
+Frame Curve	Encuadrar curva
+Delete Curve Keys	Eliminar claves de curva
+Copy Curve Keys	Copiar claves de curva
+Paste Curve Keys	Pegar claves de curva
+Eyedropper	Cuentagotas
+Language (editor)	Idioma (editor)
+Editor Theme	Tema del editor
+Unity Dark	Unity oscuro
+Retrowave	Retrowave
+Editor Language	Idioma del editor
+2D Object	Objeto 2D
+3D Object	Objeto 3D
+Light	Luz
+Camera	Cámara
+Cube	Cubo
+Sphere	Esfera
+Plane	Plano
+Capsule	Cápsula
+Cylinder	Cilindro
+Quad	Quad
+Point Light	Luz puntual
+Spot Light	Luz focal
+Create Empty	Crear vacío
+Transform	Transform
+Rigidbody	Rigidbody
+Visible	Visible
+Static	Estático
+Material	Material
+Mass	Masa
+Gravity	Gravedad
+Text	Texto
+Image	Imagen
+Button	Botón
+Canvas	Canvas
+Panel	Panel
+Particle System	Sistema de partículas
+Rendering	Renderizado
+Lighting	Iluminación
+Search	Buscar
+Filter	Filtrar
+Collapse	Contraer
+Clear on Play	Limpiar al reproducir
+Error Pause	Pausar en error
+Favorites	Favoritos

@@ -1,6 +1,6 @@
-name: Editor de Windows (.exe)
+name: HoneyEngine para Windows (.exe)
 
-# Compila el editor de JasperEngine en un servidor Windows de GitHub y deja
+# Compila el editor de HoneyEngine (fork de JasperEngine) en un servidor Windows de GitHub y deja
 # un .zip con el .exe para descargar. Corre con cada push a la rama
 # build-windows, o a mano desde la pestaña Actions.
 on:
@@ -28,7 +28,7 @@ jobs:
           arch: x64
 
       - name: Configurar
-        run: cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DJASPERENGINE_TESTS=OFF "-DCMAKE_INSTALL_PREFIX=${{ github.workspace }}/dist/JasperEngine"
+        run: cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DJASPERENGINE_TESTS=OFF "-DCMAKE_INSTALL_PREFIX=${{ github.workspace }}/dist/HoneyEngine"
 
       - name: Compilar
         run: cmake --build build --target jasperengine-editor jasperengine-editor-cmd
@@ -36,10 +36,13 @@ jobs:
       - name: Instalar
         run: cmake --install build
 
+      - name: Renombrar el editor a HoneyEngine.exe
+        run: Rename-Item "dist/HoneyEngine/bin/jasperengine-editor.exe" "HoneyEngine.exe"
+
       - name: Subir el editor
         uses: actions/upload-artifact@v4
         with:
-          name: JasperEngine-Windows
-          path: dist/JasperEngine
+          name: HoneyEngine-Windows
+          path: dist/HoneyEngine
           if-no-files-found: error
           retention-days: 30

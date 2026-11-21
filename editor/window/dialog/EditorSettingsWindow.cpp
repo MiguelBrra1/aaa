@@ -17,6 +17,7 @@
 #include "App.h"
 #include "Project.h"
 #include "Theme.h"
+#include "EditorLang.h"
 #include "log/Logger.h"
 #include "external/IconsFontAwesome6.h"
 #include "util/FileDialogs.h"
@@ -225,6 +226,8 @@ void EditorSettingsWindow::open(Project* project) {
     m_editorVSyncEnabled = AppSettings::getEditorVSyncEnabled();
     m_projectHubAlways = AppSettings::getProjectHubAlways();
     m_uiScalePercent = static_cast<int>(std::lround(AppSettings::getUiScale() * 100.0f));
+    m_editorLanguage = AppSettings::getEditorLanguage();
+    m_editorTheme = AppSettings::getEditorTheme() == "unity_dark" ? 1 : 0;
     m_autosaveEnabled = AppSettings::isAutosaveEnabled();
     m_autosaveInterval = AppSettings::getAutosaveIntervalSeconds();
     m_networkOffline = AppSettings::isNetworkOffline();
@@ -494,6 +497,35 @@ void EditorSettingsWindow::drawGeneralSettings() {
                 }
                 ImGui::EndCombo();
             }
+        }
+
+        if (settingsui::beginRow("preferences.editor_language")) {
+            if (prefsBeginSettingsRow("Editor Language",
+                                 "The language of the editor's menus, windows and buttons. Games have their own languages "
+                                 "(Localization, docs/localization.md).",
+                                 m_editorLanguage != "es")) {
+                m_editorLanguage = "es";
+            }
+            ImGui::SetNextItemWidth(Theme::dpi(160.0f));
+            if (ImGui::BeginCombo("##EditorLanguage", EditorLang::displayName(m_editorLanguage))) {
+                for (const std::string& code : EditorLang::available()) {
+                    const bool selected = code == m_editorLanguage;
+                    if (ImGui::Selectable(EditorLang::displayName(code), selected)) m_editorLanguage = code;
+                    if (selected) ImGui::SetItemDefaultFocus();
+                }
+                ImGui::EndCombo();
+            }
+        }
+
+        if (settingsui::beginRow("preferences.editor_theme")) {
+            if (prefsBeginSettingsRow("Editor Theme",
+                                 "The editor's colours: Retrowave (neon on deep purple) or Unity's dark skin.",
+                                 m_editorTheme != 0)) {
+                m_editorTheme = 0;
+            }
+            static const char* const themes[] = {"Retrowave", "Unity Dark"};
+            ImGui::SetNextItemWidth(Theme::dpi(160.0f));
+            ImGui::Combo("##EditorTheme", &m_editorTheme, themes, 2);
         }
 
         sectionRow("Auto Save");
@@ -1484,6 +1516,16 @@ bool EditorSettingsWindow::applySettings() {
     AppSettings::setAutosaveIntervalSeconds(m_autosaveInterval);
     AppSettings::setNetworkOffline(m_networkOffline);
     AppSettings::setUiScale(m_uiScalePercent / 100.0f);
+    AppSettings::setEditorLanguage(m_editorLanguage);
+    EditorLang::set(AppSettings::getEditorLanguage());
+    {
+        const Theme::Style chosen = m_editorTheme == 1 ? Theme::Style::UnityDark : Theme::Style::Retrowave;
+        AppSettings::setEditorTheme(Theme::styleId(chosen));
+        if (chosen != Theme::style()) {
+            Theme::setStyle(chosen);
+            Theme::apply();     // the next frame rescales it for the DPI and UI Scale
+        }
+    }
     const LatticeViewSettings previousLattice = AppSettings::getLatticeViewSettings();
     AppSettings::setLatticeViewSettings(m_lattice);
     const LatticeViewSettings lattice = AppSettings::getLatticeViewSettings();

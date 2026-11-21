@@ -47,6 +47,8 @@ namespace jasperengine::editor {
         bool m_editorVSyncEnabled = true;
         bool m_projectHubAlways = false;
         int m_uiScalePercent = 100;
+        std::string m_editorLanguage = "es";
+        int m_editorTheme = 0;     // 0 Retrowave, 1 Unity Dark
         bool m_autosaveEnabled = true;
         int m_autosaveInterval = 60;
         bool m_networkOffline = false;
